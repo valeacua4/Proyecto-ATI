@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  bd:
+    image: mongo
+    volumes:
+    - app-volumne:/data/db
+  app:
+    build: flask
+    ports:
+      - "5000:5000"
+  volumes:
+      app-volumne:
