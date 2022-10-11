@@ -2,10 +2,10 @@ version: "3.8"
 services:
   app:
     build: .
-    depends_on:
-      - bd
     ports:
       - "5000:5000"
+    depends_on:
+      - bd
   bd:
     image: mongo
     ports:
