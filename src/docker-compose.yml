@@ -1,12 +1,16 @@
 version: "3.8"
 services:
-  bd:
-    image: mongo
-    volumes:
-    - app-volumne:/data/db
   app:
-    build: flask
+    build: .
+    depends_on:
+      - bd
     ports:
       - "5000:5000"
+  bd:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+    - app-volumne:/data/db
   volumes:
       app-volumne:
