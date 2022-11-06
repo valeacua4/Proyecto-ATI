@@ -34,6 +34,11 @@
   display: flex;
 }
 
+.avatar_card {
+  width: 46px;
+  height: 46px;
+}
+
 .name_date_card {
   margin-left: 7px;
 }
@@ -66,13 +71,72 @@
   margin-top: 14px;
 }
 
+.comment_icon {
+  width: 13px;
+  height: 13px;
+}
+
 .comments_card {
   font-size: 10px;
   color: rgb(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .comments_card_icon {
   display: flex;
   gap: 7px;
   font-size: 10px;
+}
+
+/*-------------- Responsive para desktop---------- */
+@media (min-width: 992px) {
+  .search {
+    position: relative;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+  }
+  .card {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    background: rgb(196, 196, 196, 0.2);
+    border-radius: 10px;
+    padding: 18px 24px 18px 24px;
+    border: none;
+  }
+
+  .avatar_card {
+    width: 55px;
+    height: 55px;
+  }
+
+  .comment_icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .comments_card {
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  .name_card {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .date_card {
+    color: #4d4d4d;
+    font-size: 12px;
+  }
+
+  .caption {
+    font-size: 14px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+  .comments_card_icon {
+    display: flex;
+    gap: 7px;
+    font-size: 17px;
+  }
 }

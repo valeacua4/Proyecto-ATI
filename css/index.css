@@ -65,3 +65,10 @@ body {
   padding: 20px 0 20px 0;
   background-color: white;
 }
+
+/*-------------- Responsive para desktop---------- */
+@media (min-width: 992px) {
+  .container {
+    padding-bottom: 10px;
+  }
+}
