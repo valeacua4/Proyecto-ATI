@@ -1,0 +1,77 @@
+.form-control {
+  padding-left: 40px !important;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.search_icon {
+  position: absolute;
+  left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  position: relative;
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+.card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: rgb(196, 196, 196, 0.2);
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  border: none;
+}
+
+.head_card {
+  display: flex;
+}
+
+.name_date_card {
+  margin-left: 7px;
+}
+
+.name_card {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.date_card {
+  color: #4d4d4d;
+  font-size: 10px;
+}
+
+.caption {
+  font-size: 10px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+}
+
+.cover_card {
+  border: 0.5px solid #006175;
+  border-radius: 20px;
+}
+
+.comments {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.comments_card {
+  font-size: 10px;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.comments_card_icon {
+  display: flex;
+  gap: 7px;
+  font-size: 10px;
+}
