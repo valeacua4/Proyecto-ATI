@@ -42,6 +42,7 @@ body {
 
 .item_sidebar:hover {
   background-color: rgb(196, 196, 196, 0.2);
+  font-weight: bold;
 }
 
 .exit {
