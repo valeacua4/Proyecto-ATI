@@ -1,0 +1,152 @@
+.publicacion {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #006175;
+  border-radius: 10px;
+}
+.head_publicacion {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+}
+.avatar_publicacion {
+  width: 33px;
+  height: 33px;
+}
+.input_caption {
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  width: 100%;
+  outline: none;
+}
+.multimedia {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  padding: 8px;
+  border-top: 1px solid #006175;
+}
+
+.texto_multimedia {
+  font-size: 14px;
+  color: #5c696b;
+  cursor: pointer;
+}
+.btn_multimedia {
+  background-color: #006175;
+  border-radius: 4px;
+  padding: 4px 6px 4px 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.privacidad {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.label_privacidad {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.select_publicacion {
+  background: #ffffff;
+  border: 1px solid #006175;
+  border-radius: 10px;
+  padding: 8px 10px 8px 20px;
+  outline: none;
+}
+
+.btn_cargar_publicacion {
+  background-color: #006175;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+}
+
+.icon_multimedia {
+  width: 18px;
+  height: 18px;
+}
+.color{
+  background-color: #006175;
+}
+.title_text_perfil{
+  /* background-color: burlywood; */
+  display: inline;
+
+}
+.i_margen{
+  margin-right: 10px;
+}
+
+.vertical-align{
+  display: flex;
+  align-items: center;
+}
+.table{
+  margin-bottom: 0px;
+}
+hr{
+  margin: 0.6em 0;
+  border-top: 0.1px solid;
+  opacity: 0.2;
+}
+a{
+  text-decoration: none;
+}
+
+.imagenPerfil{
+  margin-bottom: 15px;
+}
+
+/* Rectangle 263 */
+
+.btn-perfil{
+  /* position: absolute;  */
+  width: 90px;
+  /* left: 143px; */
+  /* top: 281px; */
+  /* height: 31px; */
+
+  background: #006175;
+  border-radius: 20px;
+  color: white;
+
+}
+/*-------------- Responsive para desktop---------- */
+@media (min-width: 992px) {
+  .input_caption {
+    font-size: 18px;
+  }
+  .avatar_publicacion {
+    width: 80px;
+    height: 82px;
+  }
+  .texto_multimedia {
+    font-size: 18px;
+  }
+  .label_privacidad {
+    font-size: 18px;
+  }
+  .icon_multimedia {
+    width: 33px;
+    height: 33px;
+  }
+  .btn_cargar_publicacion {
+    max-width: 320px;
+  }
+  .btn_cargar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
