@@ -107,6 +107,9 @@ a{
 .imagenPerfil{
   margin-bottom: 17px;
 }
+img, svg{
+  vertical-align: baseline;
+}
 
 /* Rectangle 263 */
 
@@ -116,7 +119,7 @@ a{
   /* left: 143px; */
   /* top: 281px; */
   /* height: 31px; */
-
+  display: inline-block;
   background: #006175;
   border-radius: 20px;
   color: white;
