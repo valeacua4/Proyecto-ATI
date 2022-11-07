@@ -105,7 +105,7 @@ a{
 }
 
 .imagenPerfil{
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 /* Rectangle 263 */
@@ -121,6 +121,10 @@ a{
   border-radius: 20px;
   color: white;
 
+}
+
+.numeros{
+  padding: 0px;
 }
 /*-------------- Responsive para desktop---------- */
 @media (min-width: 992px) {
@@ -148,5 +152,12 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  img.imagenPerfil{
+    display: inline;
+    /* background-color: #006175; */
+    width: 231px;
+    height: 231px;
   }
 }
