@@ -39,14 +39,14 @@ body {
   display: flex;
   color: white;
   gap: 30px;
-  padding: 35px 50px 35px 50px;
+  margin: 45px 50px 45px 50px;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
 }
 
 .item_sidebar:hover {
-  background-color: rgb(196, 196, 196, 0.2);
+  /* background-color: rgb(196, 196, 196, 0.2); */
   font-weight: bold;
   text-decoration: none;
   color: white;
@@ -55,7 +55,6 @@ body {
 .exit {
   position: fixed;
   bottom: 0px;
-  padding-bottom: 20px;
   width: 100%;
 }
 

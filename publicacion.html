@@ -10,11 +10,19 @@
       crossorigin="anonymous"
     />
 
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="./app/static/images/favicon.ico"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="css/index.css" type="text/css" />
-    <link rel="stylesheet" href="css/home.css" type="text/css" />
-    <link rel="stylesheet" href="css/publicacion.css" type="text/css" />
+    <link rel="stylesheet" href="/app/static/css/index.css" type="text/css" />
+    <link rel="stylesheet" href="/app/static/css/home.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/app/static/css/publicacion.css"
+      type="text/css"
+    />
 
     <link
       rel="stylesheet"
@@ -32,8 +40,12 @@
         <div class="col-12 col-lg-8">
           <!-------- Titulo de la pagina  ------->
           <div class="title_page">
-            <a href="/home.html">
-              <img src="/images/icons/arrow_left.svg" class="arrow" />
+            <a href="./home.html">
+              <img
+                src="./app/static/images/icons/arrow_left.svg"
+                class="arrow"
+                alt="flecha para volver"
+              />
             </a>
             <h1 class="title_text">Publicación</h1>
           </div>
@@ -42,10 +54,11 @@
             <div class="publicacion">
               <div class="head_publicacion">
                 <img
-                  src="/images/icons/avatar_women.svg"
+                  src="./app/static/images/icons/avatar_women.svg"
                   width="46"
                   height="46"
                   class="avatar_publicacion"
+                  alt="foto de perfil del usuario"
                 />
                 <input
                   type="text"
@@ -57,7 +70,8 @@
                 <div class="btn_multimedia">
                   <img
                     class="icon_multimedia"
-                    src="/images/icons/multimedia.svg"
+                    src="./app/static/images/icons/multimedia.svg"
+                    alt="icono de multimedia"
                   />
                 </div>
                 <span class="texto_multimedia">Foto/video/audio</span>
@@ -91,67 +105,92 @@
           </form>
           <!---------- Footer -------------->
           <div class="footer d-lg-none">
-            <a href="/home.html">
+            <a href="./home.html">
               <img
-                src="/images/icons/home.svg"
+                src="./app/static/images/icons/home.svg"
                 width="25"
                 height="25"
                 class="icon_footer"
+                alt="icono de home"
               />
             </a>
             <img
-              src="/images/icons/notification.svg"
+              src="./app/static/images/icons/notification.svg"
               width="25"
               height="25"
               class="icon_footer"
+              alt="icono de notificaciones"
             />
-            <a href="/publicacion.html">
+            <a href="./publicacion.html">
               <img
-                src="/images/icons/plus_fill.svg"
+                src="./app/static/images/icons/plus_fill.svg"
                 width="25"
                 height="25"
                 class="icon_footer"
+                alt="icono de crear publicacion"
               />
             </a>
             <img
-              src="/images/icons/chat.svg"
+              src="./app/static/images/icons/chat.svg"
               width="25"
               height="25"
               class="icon_footer"
+              alt="icono del chat"
             />
             <img
-              src="/images/icons/avatar_women.svg"
+              src="./app/static/images/icons/avatar_women.svg"
               width="25"
               height="25"
               class="icon_footer"
+              alt="icono de mi perfil"
             />
           </div>
         </div>
 
         <!-- Sidebar en desktop -->
         <div class="sidebar col-lg-4 d-none d-lg-block">
-          <a href="/home.html" class="item_sidebar">
-            <img src="/images/icons/home_white_outline.svg" />
+          <a href="./home.html" class="item_sidebar">
+            <img
+              src="./app/static/images/icons/home_white_outline.svg"
+              alt="icono de home"
+            />
             <p class="title_sidebar">Home</p>
           </a>
           <a class="item_sidebar">
-            <img src="/images/icons/notifications_white.svg" />
+            <img
+              src="./app/static/images/icons/notifications_white.svg"
+              alt="icono de notificaciones"
+            />
             <p class="title_sidebar">Notificaciones</p>
           </a>
-          <a class="item_sidebar" href="/publicacion.html">
-            <img src="/images/icons/plus_fill_white.svg" />
+          <a class="item_sidebar" href="./publicacion.html">
+            <img
+              src="./app/static/images/icons/plus_fill_white.svg"
+              alt="icono de crear publicacion"
+            />
             <p class="title_sidebar">Crear publicación</p>
           </a>
           <a class="item_sidebar">
-            <img src="/images/icons/chat_white.svg" />
+            <img
+              src="./app/static/images/icons/chat_white.svg"
+              alt="icono del chat"
+            />
             <p class="title_sidebar">Chat</p>
           </a>
           <a class="item_sidebar">
-            <img width="50" height="50" src="/images/icons/avatar_women.svg" />
+            <img
+              width="50"
+              height="50"
+              src="./app/static/images/icons/avatar_women.svg"
+              alt="icono de mi perfil"
+            />
             <p class="title_sidebar">Mi Perfil</p>
           </a>
           <a class="item_sidebar exit">
-            <img src="/images/icons/exit_white.svg" />
+            <img
+              src="./app/static/images/icons/exit_white.svg"
+              alt="icono de cerrar sesion"
+            />
             <p class="title_sidebar">Cerrar sesión</p>
           </a>
         </div>
