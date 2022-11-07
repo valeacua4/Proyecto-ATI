@@ -1,0 +1,83 @@
+.agregar_comentario {
+  background-color: white;
+  display: flex;
+  gap: 6.5px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 60px;
+  right: 0;
+  left: 0;
+}
+
+.comentario_item {
+  gap: 5px;
+  display: flex;
+  margin-top: 15px;
+  padding-bottom: 100px;
+}
+
+.comentario {
+  display: flex;
+  flex-direction: column;
+}
+
+.comentario_texto {
+  font-size: 8px;
+}
+
+.nombre_fecha {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nombre_comentario {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.fecha_comentario {
+  opacity: 0.8;
+  font-size: 10px;
+}
+
+/*-------------- Responsive para desktop---------- */
+@media (min-width: 992px) {
+  .comentario_texto {
+    font-size: 12px;
+  }
+  .nombre_comentario {
+    font-size: 18px;
+  }
+  .fecha_comentario {
+    font-size: 12px;
+  }
+  .agregar_comentario {
+    background-color: white;
+    display: flex;
+    padding: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 6.5px;
+    align-items: center;
+    justify-content: center;
+    width: 56%;
+    position: fixed;
+    bottom: 0px;
+    right: auto;
+    left: auto;
+  }
+
+  .comentario_item {
+    padding-bottom: 80px;
+  }
+  .button_post {
+    width: 150px;
+  }
+  .button_post:hover {
+    background-color: #006175;
+    opacity: 0.2px;
+    color: white;
+  }
+}

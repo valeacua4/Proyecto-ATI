@@ -4,6 +4,10 @@
   font-family: Verdana, Arial, helvetica, sans-serif;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 p {
   margin: 0;
 }
@@ -38,11 +42,14 @@ body {
   padding: 35px 50px 35px 50px;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .item_sidebar:hover {
   background-color: rgb(196, 196, 196, 0.2);
   font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
 
 .exit {
@@ -66,9 +73,64 @@ body {
   background-color: white;
 }
 
+/* ----------- Inputs ------------- */
+
+.input_simple {
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 1px solid #006175;
+  width: 100%;
+  outline: none;
+}
+
+/* ------------ Buttons --------------- */
+
+.button_fill {
+  background-color: #006175;
+  color: white;
+  font-size: 18px;
+}
+
+/* ----------- Titulos de las paginas ------------- */
+.title_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.arrow {
+  width: 10px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.title_text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /*-------------- Responsive para desktop---------- */
 @media (min-width: 992px) {
   .container {
     padding-bottom: 10px;
+  }
+  /* ----------- Titulos de las paginas ------------- */
+  .title_page {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .arrow {
+    width: 30px;
+    height: 41px;
+  }
+
+  .title_text {
+    font-size: 40px;
   }
 }

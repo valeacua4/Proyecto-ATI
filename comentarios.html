@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link rel="stylesheet" href="css/home.css" type="text/css" />
+    <link rel="stylesheet" href="css/comentarios.css" type="text/css" />
 
     <link
       rel="stylesheet"
@@ -29,20 +30,18 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-8">
-          <div class="form-group search">
-            <!-- Buscador -->
-            <img class="search_icon" src="/images/icons/search.svg" />
-            <input
-              type="text"
-              id="inputSearch"
-              placeholder="Buscar"
-              class="form-control"
-            />
+          <!-------- Titulo de la pagina  ------->
+          <div class="title_page">
+            <a href="/home.html">
+              <img src="/images/icons/arrow_left.svg" class="arrow" />
+            </a>
+            <h1 class="title_text">Comentarios</h1>
           </div>
+
           <!-------- Publicacion con imagen -------->
           <div class="card">
             <div class="head_card">
-              <img src="/images/png/avatar_man.png" class="avatar" />
+              <img src="/images/png/avatar_man.png" class="avatar_card" />
               <div class="name_date_card">
                 <p class="name_card">Eduardo Yanez</p>
                 <p class="date_card">24/10/2022 6:25PM</p>
@@ -53,9 +52,7 @@
             <img src="/images/png/card.png" class="cover_card" />
             <!-- comentarios -->
             <div class="comments">
-              <a href="comentarios.html">
-                <p class="comments_card">Ver todos los comentarios</p>
-              </a>
+              <p class="comments_card"></p>
               <div class="comments_card_icon">
                 <img
                   class="comment_icon"
@@ -65,56 +62,30 @@
               </div>
             </div>
           </div>
-
-          <!------- Publicacion de texto ------->
-          <div class="card">
-            <div class="head_card">
-              <img
-                src="/images/png/avatar_man2.png"
-                width="46"
-                height="46"
-                class="avatar"
-              />
-              <div class="name_date_card">
-                <p class="name_card">Juan Jose Perez</p>
-                <p class="date_card">24/10/2022 3:00PM</p>
+          <!------- Comentario --------->
+          <div class="comentario_item">
+            <img class="avatar" src="/images/png/avatar_man3.png" />
+            <div class="comentario">
+              <div class="nombre_fecha">
+                <p class="nombre_comentario">Cristian Diaz</p>
+                <p class="fecha_comentario">Hace 1 min</p>
               </div>
+              <p class="comentario_texto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pharetra aliquam, congue habitasse tortor. Fringilla nunc
+                aliquam volutpat suscipit porttitor in quis sagittis hac. Tellus
+                sed ac libero
+              </p>
             </div>
-            <p class="caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
-            </p>
           </div>
-
-          <!-------- Publicacion de texto ------->
-          <div class="card">
-            <div class="head_card">
-              <img
-                src="/images/png/avatar_x.png"
-                width="46"
-                height="46"
-                class="avatar"
-              />
-              <div class="name_date_card">
-                <p class="name_card">Carlos Miguel</p>
-                <p class="date_card">24/10/2022 3:00PM</p>
-              </div>
-            </div>
-            <p class="caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
-            </p>
-            <!-- comentarios -->
-            <div class="comments">
-              <a href="comentarios.html">
-                <p class="comments_card">Ver todos los comentarios</p>
-              </a>
-              <div class="comments_card_icon">
-                <img
-                  class="comment_icon"
-                  src="/images/icons/chat_fill_black.svg"
-                />
-                <p class>57</p>
-              </div>
-            </div>
+          <!------- Agregar un comentario -------->
+          <div class="agregar_comentario">
+            <input
+              type="text"
+              placeholder="Agrega un comentario"
+              class="input_simple"
+            />
+            <button class="btn button_fill button_post">Post</button>
           </div>
 
           <!---------- Footer -------------->
