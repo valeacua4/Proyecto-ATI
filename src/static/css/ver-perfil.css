@@ -132,6 +132,22 @@ img, svg{
 .numeros{
   padding: 0px;
 }
+
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Cambiar foto de perfil';
+  color: #3D65BA;
+  display: inline-block;
+  padding: 5px 8px;
+  font-size: 16px;
+}
+
+
 /*-------------- Responsive para desktop---------- */
 @media (min-width: 992px) {
   .input_caption {
