@@ -1,0 +1,72 @@
+.notificacion {
+  display: flex;
+  flex-direction: column;
+  border: 1px 
+}
+
+.comentario_item {
+  gap: 5px;
+  display: flex;
+  margin-top: 15px;
+  padding-bottom: 100px;
+  margin-left: 60px;
+}
+.comentario {
+  display: flex;
+}
+.comentario_texto {
+  font-size: 8px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.nombre{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.nombre_comentario {
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+.publicacion{
+  display: flex;
+  margin-left: 70px;
+}
+.btn_acerptar{
+  display: flex;
+  margin-left: 120px;
+}
+.btn_aceptar_inivitacion {
+  background-color: #006175;
+  color: white;
+  border-radius: 10px;
+  width: 100PX;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+}
+.btn_aceptar_inivitacion:hover {
+  background-color: #9B9B9B;
+  color: white;
+}
+
+/*-------------- Responsive para desktop---------- */
+@media (min-width: 992px) {
+  .comentario_texto {
+      font-size: 12px;
+    }
+    .nombre_comentario {
+      font-size: 18px;
+    }
+    .fecha_comentario {
+      font-size: 9px;
+    }
+    .comentario_item {
+      padding-bottom: 80px;
+    } 
+}
+
+@media only screen and (max-width: 360px){
+}
+  
