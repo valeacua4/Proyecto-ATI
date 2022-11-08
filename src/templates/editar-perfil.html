@@ -12,31 +12,23 @@
 </div>
 <div class="container-md row">
   <img width="148" height="148" src="{{ url_for('static', filename='images/svg/eduardo_yanez.svg')}}"
-    alt="icono de mi perfil" class="mx-auto d-block imagenPerfil mx-lg-0" style="position: relative; left:42%;" />
+    alt="icono de mi perfil" class="mx-auto d-block imagenPerfil mx-lg-0" style="position: relative; left:40%;" />
 
-  <a href="#" class="text-start h5 imagenPerfil" style="color:#3D65BA; position: relative; left:42%;">Cambiar foto de
+  <a href="#" class="text-start h5 imagenPerfil" style="color:#3D65BA; position: relative; left:40%;">Cambiar foto de
     perfil</a>
 
-  <!-- <a href="./app/templates/home.html">
-                            <img src="./app/static/images/icons/arrow_left.svg" class="arrow" alt="flecha para volver" />
-                        </a> -->
-  <!-- boton de amigos -->
-  <!-- <div class="row">
-                        <div class="col v-center">
-                            <button class="btn d-block mx-auto btn-perfil"> Amigos </button>
-                        </div>  
-                    </div> -->
+
 </div>
 <div class="col-lg-9 imagenPerfil">
   <p> </p>
 </div>
 
 
-                <!-- informacion del perfil -->
-                <div class="row">
-                    <h2 class="h5 fw-bold">Username </h2 class="h5 fw-bold">
-                    <p class="text-start h5 imagenPerfil" contenteditable="true">Eduardo Yanez</p>
-                    <hr />
+  <!-- informacion del perfil -->
+  <div class="row">
+  <h2 class="h5 fw-bold">Username </h2 class="h5 fw-bold">
+  <p class="text-start h5 imagenPerfil" contenteditable="true">Eduardo Yanez</p>
+  <hr />
 
   <h2 class="h5 fw-bold">Bio </h2 class="h5 fw-bold">
   <p class="text-start h5 imagenPerfil" contenteditable="true">Soy una persona positiva. Me encanta viajar y comer.</p>
@@ -48,51 +40,66 @@
     <h2 class="h5 fw-bold">Detalles</h2 class="h5 fw-bold">
     <div class="card">
 
-    <!---------- Footer -------------->
-    <div class="footer d-lg-none">
-        <a href="/">
-          <img
-            src="{{ url_for('static', filename='images/icons/home_fill.svg')}}"
-            width="25"
-            height="25"
-            class="icon_footer"
-            alt="icono de home"
-          />
-        </a>
-        <img
-          src="{{ url_for('static', filename='images/icons/notification.svg')}}"
-          width="25"
-          height="25"
-          class="icon_footer"
-          alt="icono de notificaciones"
-        />
-        <a href="/publicacion.html">
-          <img
-            src="{{ url_for('static', filename='images/icons/plus.svg')}}"
-            width="25"
-            height="25"
-            class="icon_footer"
-            alt="icono de crear publicacion"
-          />
-        </a>
-        <img
-          src="{{ url_for('static', filename='images/icons/chat.svg')}}"
-          width="25"
-          height="25"
-          class="icon_footer"
-          alt="icono del chat"
-        />
-        <a href="/perfil">
-          <img
-            src="{{ url_for('static', filename='images/svg/eduardo_yanez.svg')}}"
-            width="25"
-            height="25"
-            class="icon_footer"
-            alt="icono de mi perfil"
-          />
-        </a>
+      <div class="row table text-xs-center text-md-start vertical-align">
+          <div class="col-xs-12 col-md-6 fw-bold">
+              <img src=" {{ url_for('static', filename='images/icons/paleta-de-colores.svg')}}" width="22" height="22"
+                  class="icon_footer i_margen" alt="icono de color fav" contenteditable="true" />Color favorito
+          </div>
+          <div class="col-xs-12 col-md-6" contenteditable="true">Morado</div>
       </div>
+      <div class="row table text-xs-center text-md-start">
+          <div class="col-xs-12 col-md-6 fw-bold">
+              <img src="{{ url_for('static', filename='images/icons/libro-cerrado.svg')}} " width="22" height="22"
+                  class="icon_footer i_margen" alt="icono de libro fav" />Libro favorito
+          </div>
+          <div class="col-xs-12 col-md-6" contenteditable="true">Harry Potter</div>
+      </div>
+      <div class="row table text-xs-center text-md-start">
+          <div class="col-xs-12 col-md-6 fw-bold">
+              <img src="{{ url_for('static', filename='images/icons/musica.svg')}}" width="22" height="22" class="icon_footer i_margen"
+                  alt="icono de musica fav" />Música favorita
+          </div>
+          <div class="col-xs-12 col-md-6" contenteditable="true">Pop</div>
+      </div>
+      <div class="row table text-xs-center text-md-start">
+          <div class="col-xs-12 col-md-6 fw-bold">
+              <img src="{{ url_for('static', filename='images/icons/control-de-juego.svg')}}" width="22" height="22"
+                  class="icon_footer i_margen" alt="icono de videojuego fav" />Videojuego favorito
+          </div>
+          <div class="col-xs-12 col-md-6" contenteditable="true">Zelda</div>
+      </div>
+      <div class="row table text-xs-center text-md-start">
+          <div class="col-xs-12 col-md-6 fw-bold">
+              <img src="{{ url_for('static', filename='images/icons/codificacion.svg')}}" width="22" height="22"
+                  class="icon_footer i_margen" alt="icono de lenguajes" />Lenguajes aprendidos
+          </div>
+          <div class="col-xs-12 col-md-6" contenteditable="true">python, javascript, c++</div>
+      </div>
+      <div class="row table text-xs-center text-md-start">
+          <div class="col-xs-12 col-md-6 fw-bold">
+              <img src="{{ url_for('static', filename='images/icons/correo.svg')}}" width="22" height="22" class="icon_footer i_margen"
+                  alt="icono de correo" />Correo
+          </div>
+          <div class="col-xs-12 col-md-6" contenteditable="true">eduardo.yanez@gmail.com</div>
+      </div>
+
     </div>
+      <hr>
+
+    <div>
+      <h2 class="h5 fw-bold">Color </h2 class="h5 fw-bold">
+        <div>
+          <input type="color" id="color" name="color" value="#006175"> 
+          <label for="color"> #</label>
+        </div>
+
+        <div style="text-align: right;">
+          <button style="width: 90px; height: 31px; background: #006175; color: white; border-radius: 20px; border: 1px solid;"> Guardar</button>
+        </div>
+
+    </div>
+
+
 
     <!-- Sidebar en desktop -->
     <div class="sidebar col-lg-4 d-none d-lg-block">
