@@ -1,0 +1,219 @@
+{% extends "base.html" %} {% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/ver-perfil.css')}}" type="text/css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}" type="text/css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/notificaciones.css')}}" type="text/css" />
+{% endblock %} {% block content %}
+<!-------- Titulo de la pagina  ------->
+<div class="title_page">
+    <a href="/">
+        <img src="../static/images/icons/arrow_left.svg" class="arrow" alt="flecha para volver" />
+    </a>
+    <h1 class="title_text">Configuracion</h1>
+</div>
+<div class="container-md row">
+    <img width="148" height="148" src="../static/images/svg/eduardo_yanez.svg" alt="icono de mi perfil"
+        class="mx-auto d-block imagenPerfil2 mx-lg-0" />
+   
+</div>
+<div class="imagenPerfil">
+</div>
+
+
+<!-- informacion del perfil -->
+<div class="row">
+    <div class="col-xl-5 col-md-12 col-xl-5">
+        <div class="col-xs-12 col-md-6 fw-bold">
+            <img src="../static/images/icons/privacidad.svg" width="22" height="22"
+                class="icon_footer i_margen" alt="icono de color fav" />Privacidad
+        </div>
+        <br>
+        <div class="col-xs-20 col-md-10">
+            <div>
+            <img src="../static/images/icons/menoscirculo.svg" width="18" height="18"
+                class="icon_footer i_margen" alt="icono de color fav" />
+                <a>Todos</a>
+            </div>
+            <div>
+                <img src="../static/images/icons/menoscirculo.svg" width="18" height="18"
+                    class="icon_footer i_margen" alt="icono de color fav" />
+                    <a>Amigos</a>
+                </div>
+            <div>
+               <img src="../static/images/icons/menoscirculo.svg" width="18" height="18"
+                class="icon_footer i_margen" alt="icono de color fav" />
+                <a>Amigos de Amigos</a>
+            </div>
+            <div>
+                <img src="../static/images/icons/checklist.svg" width="18" height="18"
+                 class="icon_footer i_margen" alt="icono de color fav" />
+                 <a>Amigos Selecionados</a>
+            
+                <div class="form-group search">
+                    <!-- Buscador -->
+                    <img
+                    class="search_icon"
+                        src="{{ url_for('static', filename='images/icons/search.svg')}}"
+                        alt="icono de lupa"
+                    />
+                    <input
+                    type="text"
+                    id="inputSearch"
+                    placeholder="Buscar"
+                    class="form-control"
+                    />
+                </div>
+                
+                                
+                <div class="card">
+                    <div class="head_card">
+                        <img
+                            src="{{ url_for('static', filename='images/png/avatar_man2.png')}}"
+                            class="avatar"
+                            alt="foto de perfil del usuario"
+                        />
+                        <div class="name_date_card">
+                            <a class="name_card">Jose Miguel</a>
+                            <img src="../static/images/icons/checklistcirculo.svg" width="18" height="18"
+                                class="icon_footer i_margen" alt="icono de color fav" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="head_card">
+                        <img
+                            src="{{ url_for('static', filename='images/png/avatar_man3.png')}}"
+                            class="avatar"
+                            alt="foto de perfil del usuario"
+                        />
+                        <div class="name_date_card">
+                            <a class="name_card">Raul Riman</a>
+                            <img src="../static/images/icons/checklistcirculo.svg" width="18" height="18"
+                                class="icon_footer i_margen" alt="icono de color fav" />
+                        </div>
+                    </div>
+                </div>
+                
+                        
+                    <p ><center style="color:gray">Configura la privacidad de tu perfil para controlar quien tiene
+                        acceso a tu contenido</center></p>
+            </div>
+            
+        </div>
+        <br>
+        <br> 
+             
+        <div class="col-xs-12 col-md-6 fw-bold">
+            
+            <img src="../static/images/icons/password.svg" width="22" height="22"
+                class="icon_footer i_margen" alt="icono de color fav" />Contraseña
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        
+    </div>
+
+
+
+    <div class="col-xl-5 col-md-12">
+        <div class="col-xs-5 col-md-12 fw-bold">
+            <img src="../static/images/icons/Chats.svg" width="22" height="22"
+                class="icon_footer i_margen" alt="icono de color fav" />Notificaciones de Chats
+        </div>
+        <br>
+        <div>
+            <img src="../static/images/icons/sinsonido.svg" width="18" height="18"
+                class="icon_footer i_margen" alt="icono de color fav" />
+                <a>Todos los chats</a>
+            </div>
+            
+            <div>
+                <img src="../static/images/icons/sinsonido.svg" width="18" height="18"
+                    class="icon_footer i_margen" alt="icono de color fav" />
+                    <a>Profesores</a>
+                </div>
+                
+            <div>
+               <img src="../static/images/icons/sonido.svg" width="18" height="18"
+                class="icon_footer i_margen" alt="icono de color fav" />
+                <a>Estudiantes</a>
+            </div>
+            <br>
+            <br>
+            <p ><center style="color:gray">Configura las notificaciones de chat para controlar cuales notificaciones aparecen en el apartado de notificaciones</center></p>
+            <br>
+            <br>
+
+        <div class="col-xs-5 col-md-12 fw-bold">
+            <img src="../static/images/icons/Comentarios.svg" width="22" height="22"
+                class="icon_footer i_margen" alt="icono de color fav" />Notificaciones de Comentarios
+        </div>
+        <br>
+        <div>
+            <img src="../static/images/icons/sinsonido.svg" width="18" height="18"
+                class="icon_footer i_margen" alt="icono de color fav" />
+                <a>Silenciar Todos</a>
+            </div>
+            
+            <div>
+                <img src="../static/images/icons/sinsonido.svg" width="18" height="18"
+                    class="icon_footer i_margen" alt="icono de color fav" />
+                    <a>Profesores</a>
+                </div>
+                
+            <div>
+               <img src="../static/images/icons/sinsonido.svg" width="18" height="18"
+                class="icon_footer i_margen" alt="icono de color fav" />
+                <a>Estudiantes</a>
+            </div>
+            <br>
+            <br>
+            <p ><center style="color:gray">Configura las notificaciones de los comentarios para controlar cuales notificaciones aparecen en el apartado de notificaciones</center></p>
+            <br>
+            <br> 
+            
+            <div class="col-xs-5 col-md-12 fw-bold">
+                <img src="../static/images/icons/Amigos2.svg" width="22" height="22"
+                    class="icon_footer i_margen" alt="icono de color fav" />Notificaciones de Amigos Conectados
+            </div>
+            <div class="form-group search">
+                <!-- Buscador -->
+                <img
+                class="search_icon"
+                    src="{{ url_for('static', filename='images/icons/search.svg')}}"
+                    alt="icono de lupa"
+                />
+                <input
+                type="text"
+                id="inputSearch"
+                placeholder="Buscar"
+                class="form-control"
+                />
+            </div>
+            
+                            
+            <div class="card">
+                <div class="head_card">
+                    <img
+                        src="{{ url_for('static', filename='images/png/avatar_woman2.png')}}"
+                        class="avatar"
+                        alt="foto de perfil del usuario"
+                    />
+                    <div class="name_date_card">
+                        <a class="name_card">Carla Neto</a>
+                        <img src="../static/images/icons/checklistcirculo.svg" width="18" height="18"
+                            class="icon_footer i_margen" alt="icono de color fav" />
+                    </div>
+                </div>
+            </div>
+            <p ><center style="color:gray">Configura que te llegue una notificacion al momento que se conecten tus amigos </center></p>
+            
+        </div>
+
+        
+    </div>
+
+{% endblock %}
