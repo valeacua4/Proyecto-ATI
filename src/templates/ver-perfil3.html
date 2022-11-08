@@ -1,200 +1,116 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-
-    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon" />
-
-    <link rel="stylesheet" href="../static/css/index.css" type="text/css" />
-    <link rel="stylesheet" href="../static/css/home.css" type="text/css" />
-    <link rel="stylesheet" href="../static/css/ver-perfil.css" type="text/css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>ATI [UCV] 2022-1</title>
-</head>
-
-<body>
-    <div class="container">
+{% extends "base.html" %} {% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/ver-perfil.css')}}" type="text/css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}" type="text/css" />
+{% endblock %} {% block content %}
+<!-------- Titulo de la pagina  ------->
+<div class="title_page">
+    <a href="./home.html">
+        <img src="../static/images/icons/arrow_left.svg" class="arrow" alt="flecha para volver" />
+    </a>
+    <h1 class="title_text">cmiguel7</h1>
+</div>
+<div class="container-md row">
+    <img width="148" height="148" src="../static/images/svg/carlos.svg" alt="icono de un perfil"
+        class="mx-auto d-block imagenPerfil mx-lg-0" />
+    <div class="text-center imagenPerfil col-lg-6  align-self-center">
+        <div>
+            <h1 class="title_text title_text_perfil text-center text-lg-start i_margen image">Carlos
+                Miguel
+            </h1>
+            <img src="../static/images/icons/anadir.png" width="30" height="30" class="icon_footer i_margen"
+                alt="icono de amigos" />
+        </div>
         <div class="row">
-            <div class="col-lg-12">
-                <!-------- Titulo de la pagina  ------->
-                <div class="title_page">
-                    <a href="./home.html">
-                        <img src="../static/images/icons/arrow_left.svg" class="arrow" alt="flecha para volver" />
-                    </a>
-                    <h1 class="title_text">cmiguel7</h1>
-                </div>
-                <div class="container-md row">
-                    <img width="148" height="148" src="../static/images/svg/carlos.svg" alt="icono de un perfil"
-                        class="mx-auto d-block imagenPerfil mx-lg-0" />
-                    <div class="text-center imagenPerfil col-lg-6  align-self-center">
-                        <div>
-                            <h1 class="title_text title_text_perfil text-center text-lg-start i_margen image">Carlos
-                                Miguel
-                            </h1>
-                            <img src="../static/images/icons/anadir.png" width="30" height="30"
-                                class="icon_footer i_margen" alt="icono de amigos" />
-                        </div>
-                        <div class="row">
-                            <div class="col v-center">
-                            </div>
-                        </div>
-                        <table class="table table-borderless text-center ">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Publicaciones</th>
-                                    <th scope="col">Siguiendo</th>
-                                    <th scope="col">Seguidores</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>87</td>
-                                    <td>870</td>
-                                    <td>15k</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- boton de amigos -->
-
-                </div>
-                <div class="col-lg-9 imagenPerfil">
-                </div>
-
-
-                <!-- informacion del perfil -->
-                <div class="row">
-                    <div class="col-lg-4 col-md-12">
-
-                        <h2 class="h5 fw-bold">Información</h2 class="h5 fw-bold">
-                        <div class="card">
-                            <p class="text-start h5 imagenPerfil">Me gusta el futbol.</p>
-
-                            <div class="row table text-xs-center text-md-start vertical-align">
-                                <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/paleta-de-colores.svg" width="22" height="22"
-                                        class="icon_footer i_margen" alt="icono de color fav" />Color favorito
-                                </div>
-                                <div class="col-xs-12 col-md-6">Verde</div>
-                            </div>
-                            <hr />
-                            <div class="row table text-xs-center text-md-start">
-                                <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/libro-cerrado.svg" width="22" height="22"
-                                        class="icon_footer i_margen" alt="icono de libro fav" />Libro favorito
-                                </div>
-                                <div class="col-xs-12 col-md-6">Cuidades de papel</div>
-                            </div>
-                            <hr />
-                            <div class="row table text-xs-center text-md-start">
-                                <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/musica.svg" width="22" height="22"
-                                        class="icon_footer i_margen" alt="icono de musica fav" />Música favorita
-                                </div>
-                                <div class="col-xs-12 col-md-6">Rock</div>
-                            </div>
-                            <hr />
-                            <div class="row table text-xs-center text-md-start">
-                                <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/control-de-juego.svg" width="22" height="22"
-                                        class="icon_footer i_margen" alt="icono de videojuego fav" />Videojuego favorito
-                                </div>
-                                <div class="col-xs-12 col-md-6">fifa</div>
-                            </div>
-                            <hr />
-                            <div class="row table text-xs-center text-md-start">
-                                <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/codificacion.svg" width="22" height="22"
-                                        class="icon_footer i_margen" alt="icono de lenguajes" />Lenguajes aprendidos
-                                </div>
-                                <div class="col-xs-12 col-md-6">python</div>
-                            </div>
-                            <hr />
-                            <div class="row table text-xs-center text-md-start">
-                                <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/correo.svg" width="22" height="22"
-                                        class="icon_footer i_margen" alt="icono de correo" />Correo
-                                </div>
-                                <div class="col-xs-12 col-md-6">carlosmiguel@gmail.com</div>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                    <!-- <div class="col-lg-1"></div> -->
-                    <div class="col-lg-5 col-md-12">
-
-                        <h2 class="h5 fw-bold">Publicaciones</h2 class="h5 fw-bold">
-                        <p class="h5">Tienes que añadir a esta persona para ver sus publicaciones...</p>
-
-
-
-
-
-                    </div>
-                </div>
-
-                <!---------- Footer -------------->
-                <div class="footer d-lg-none">
-                    <a href="./home.html">
-                        <img src="../static/images/icons/home_fill.svg" width="25" height="25" class="icon_footer"
-                            alt="icono de home" />
-                    </a>
-                    <img src="../static/images/icons/notification.svg" width="25" height="25" class="icon_footer"
-                        alt="icono de notificaciones" />
-                    <a href="./publicacion.html">
-                        <img src="../static/images/icons/plus.svg" width="25" height="25" class="icon_footer"
-                            alt="icono de crear publicacion" />
-                    </a>
-                    <img src="../static/images/icons/chat.svg" width="25" height="25" class="icon_footer"
-                        alt="icono del chat" />
-                    <a href="./ver-perfil.html">
-                        <img src="../static/images/icons/avatar_women.svg" width="25" height="25" class="icon_footer"
-                            alt="icono de mi perfil" />
-                    </a>
-                </div>
-            </div>
-
-            <!-- Sidebar en desktop -->
-            <div class="sidebar col-lg-4 d-none d-lg-block">
-                <a href="./home.html" class="item_sidebar">
-                    <img src="../static/images/icons/home_white.svg" alt="icono de home" />
-                    <p class="title_sidebar">Home</p>
-                </a>
-                <a class="item_sidebar">
-                    <img src="../static/images/icons/notifications_white.svg" alt="icono de notificaciones" />
-                    <p class="title_sidebar">Notificaciones</p>
-                </a>
-                <a class="item_sidebar" href="-/publicacion">
-                    <img src="../static/images/icons/plus_white.svg" alt="icono de crear publicacion" />
-                    <p class="title_sidebar">Crear publicación</p>
-                </a>
-                <a class="item_sidebar">
-                    <img src="../static/images/icons/chat_white.svg" alt="icono del chat" />
-                    <p class="title_sidebar">Chat</p>
-                </a>
-                <a href="./ver-perfil.html" class="item_sidebar">
-                    <img width="50" height="50" src="../static/images/icons/avatar_women.svg"
-                        alt="icono de mi perfil" />
-                    <p class="title_sidebar">Mi Perfil</p>
-                </a>
-                <a class="item_sidebar exit">
-                    <img src="../static/images/icons/exit_white.svg" alt="icono de cerrar sesion" />
-                    <p class="title_sidebar">Cerrar sesión</p>
-                </a>
+            <div class="col v-center">
             </div>
         </div>
+        <table class="table table-borderless text-center ">
+            <thead>
+                <tr>
+                    <th scope="col">Publicaciones</th>
+                    <th scope="col">Siguiendo</th>
+                    <th scope="col">Seguidores</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>87</td>
+                    <td>870</td>
+                    <td>15k</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-</body>
+    <!-- boton de amigos -->
 
-</html>
+</div>
+<div class="col-lg-9 imagenPerfil">
+</div>
+
+
+<!-- informacion del perfil -->
+<div class="row">
+    <div class="col-lg-5 col-md-12 col-xl-5">
+
+        <h2 class="h5 fw-bold">Información</h2 class="h5 fw-bold">
+        <div class="card">
+            <p class="text-start h5 imagenPerfil">Me gusta el futbol.</p>
+
+            <div class="row table text-xs-center text-md-start vertical-align">
+                <div class="col-xs-12 col-md-6 fw-bold">
+                    <img src="../static/images/icons/paleta-de-colores.svg" width="22" height="22"
+                        class="icon_footer i_margen" alt="icono de color fav" />Color favorito
+                </div>
+                <div class="col-xs-12 col-md-6">Verde</div>
+            </div>
+            <hr />
+            <div class="row table text-xs-center text-md-start">
+                <div class="col-xs-12 col-md-6 fw-bold">
+                    <img src="../static/images/icons/libro-cerrado.svg" width="22" height="22"
+                        class="icon_footer i_margen" alt="icono de libro fav" />Libro favorito
+                </div>
+                <div class="col-xs-12 col-md-6">Cuidades de papel</div>
+            </div>
+            <hr />
+            <div class="row table text-xs-center text-md-start">
+                <div class="col-xs-12 col-md-6 fw-bold">
+                    <img src="../static/images/icons/musica.svg" width="22" height="22" class="icon_footer i_margen"
+                        alt="icono de musica fav" />Música favorita
+                </div>
+                <div class="col-xs-12 col-md-6">Rock</div>
+            </div>
+            <hr />
+            <div class="row table text-xs-center text-md-start">
+                <div class="col-xs-12 col-md-6 fw-bold">
+                    <img src="../static/images/icons/control-de-juego.svg" width="22" height="22"
+                        class="icon_footer i_margen" alt="icono de videojuego fav" />Videojuego favorito
+                </div>
+                <div class="col-xs-12 col-md-6">fifa</div>
+            </div>
+            <hr />
+            <div class="row table text-xs-center text-md-start">
+                <div class="col-xs-12 col-md-6 fw-bold">
+                    <img src="../static/images/icons/codificacion.svg" width="22" height="22"
+                        class="icon_footer i_margen" alt="icono de lenguajes" />Lenguajes aprendidos
+                </div>
+                <div class="col-xs-12 col-md-6">python</div>
+            </div>
+            <hr />
+            <div class="row table text-xs-center text-md-start">
+                <div class="col-xs-12 col-md-6 fw-bold">
+                    <img src="../static/images/icons/correo.svg" width="22" height="22" class="icon_footer i_margen"
+                        alt="icono de correo" />Correo
+                </div>
+                <div class="col-xs-12 col-md-6">carlosmiguel@gmail.com</div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <!-- <div class="col-lg-1"></div> -->
+    <div class="col-lg-7 col-md-12">
+        <h2 class="h5 fw-bold">Publicaciones</h2 class="h5 fw-bold">
+        <p class="h5">Tienes que añadir a esta persona para ver sus publicaciones...</p>
+    </div>
+</div>
+
+{% endblock %}
