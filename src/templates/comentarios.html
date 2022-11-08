@@ -1,6 +1,14 @@
 {% extends "base.html" %} {% block head %}
-<link rel="stylesheet" href="../static/css/comentarios.css" type="text/css" />
-<link rel="stylesheet" href="../static/css/home.css" type="text/css" />
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/comentarios.css')}}"
+  type="text/css"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/home.css')}}"
+  type="text/css"
+/>
 {% endblock %} {% block content %}
 <!-------- Titulo de la pagina  ------->
 <div class="title_page">
