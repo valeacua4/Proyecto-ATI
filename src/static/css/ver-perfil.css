@@ -166,4 +166,13 @@ img, svg{
     width: 231px;
     height: 231px;
   }
+
+  img.imagenPerfil2{
+    display: inline;
+    /* background-color: #006175; */
+    width: 231px;
+    height: 231px;
+    position: relative; 
+    left:42%;
+  }
 }
