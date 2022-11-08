@@ -7,11 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
-    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="{{ url_for('static', filename='images/icons/favicon.ico')}}" type="image/x-icon" />
 
-    <link rel="stylesheet" href="../static/css/index.css" type="text/css" />
-    <link rel="stylesheet" href="../static/css/home.css" type="text/css" />
-    <link rel="stylesheet" href="../static/css/ver-perfil.css" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ver-perfil.css')}}" type="text/css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -26,13 +26,13 @@
             <div class="col-lg-12">
                 <!-------- Titulo de la pagina  ------->
                 <div class="title_page">
-                    <a href="./home.html">
-                        <img src="../static/images/icons/arrow_left.svg" class="arrow" alt="flecha para volver" />
+                    <a href="/">
+                        <img src="{{ url_for('static', filename='images/icons/arrow_left.svg')}}" class="arrow" alt="flecha para volver" />
                     </a>
                     <h1 class="title_text">Editar Perfil</h1>
                 </div>
                 <div class="container-md row">
-                    <img width="148" height="148" src="../static/images/icons/avatar_women.svg"
+                    <img width="148" height="148" src="{{ url_for('static', filename='images/icons/avatar_women.svg')}}"
                         alt="icono de mi perfil" class="mx-auto d-block imagenPerfil mx-lg-0"  style="position: relative; left:42%;"/>
 
                         <a href="#" class="text-start h5 imagenPerfil" style="color:#3D65BA; position: relative; left:42%;">Cambiar foto de perfil</a>
@@ -70,42 +70,42 @@
                     
                             <div class="row table text-xs-center text-md-start vertical-align">
                                 <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/paleta-de-colores.svg" width="22" height="22"
+                                    <img src="{{ url_for('static', filename='images/icons/paleta-de-colores.svg')}}" width="22" height="22"
                                         class="icon_footer i_margen" alt="icono de color fav" />Color favorito
                                 </div>
                                 <div class="col-xs-12 col-md-6" contenteditable="true">Morado</div>
                             </div>
                             <div class="row table text-xs-center text-md-start">
                                 <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/libro-cerrado.svg" width="22" height="22"
+                                    <img src="{{ url_for('static', filename='images/icons/libro-cerrado.svg')}}" width="22" height="22"
                                         class="icon_footer i_margen" alt="icono de libro fav" />Libro favorito
                                 </div>
                                 <div class="col-xs-12 col-md-6" contenteditable="true">Harry Potter</div>
                             </div>
                             <div class="row table text-xs-center text-md-start">
                                 <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/musica.svg" width="22" height="22"
+                                    <img src="{{ url_for('static', filename='images/icons/musica.svg')}}" width="22" height="22"
                                         class="icon_footer i_margen" alt="icono de musica fav" />Música favorita
                                 </div>
                                 <div class="col-xs-12 col-md-6" contenteditable="true">Pop</div>
                             </div>
                             <div class="row table text-xs-center text-md-start">
                                 <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/control-de-juego.svg" width="22" height="22"
+                                    <img src="{{ url_for('static', filename='images/icons/control-de-juego.svg')}}" width="22" height="22"
                                         class="icon_footer i_margen" alt="icono de videojuego fav" />Videojuego favorito
                                 </div>
                                 <div class="col-xs-12 col-md-6" contenteditable="true">Zelda</div>
                             </div>
                             <div class="row table text-xs-center text-md-start">
                                 <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/codificacion.svg" width="22" height="22"
+                                    <img src="{{ url_for('static', filename='images/icons/codificacion.svg')}}" width="22" height="22"
                                         class="icon_footer i_margen" alt="icono de lenguajes" />Lenguajes aprendidos
                                 </div>
                                 <div class="col-xs-12 col-md-6" contenteditable="true">python, javascript, c++</div>
                             </div>
                             <div class="row table text-xs-center text-md-start">
                                 <div class="col-xs-12 col-md-6 fw-bold">
-                                    <img src="../static/images/icons/correo.svg" width="22" height="22"
+                                    <img src="{{ url_for('static', filename='images/icons/correo.svg')}}" width="22" height="22"
                                         class="icon_footer i_margen" alt="icono de correo" />Correo
                                 </div>
                                 <div class="col-xs-12 col-md-6"contenteditable="true">correo@correo.com</div>
@@ -132,9 +132,9 @@
 
     <!---------- Footer -------------->
     <div class="footer d-lg-none">
-        <a href="./home.html">
+        <a href="/">
           <img
-            src="../static/images/icons/home_fill.svg"
+            src="{{ url_for('static', filename='images/icons/home_fill.svg')}}"
             width="25"
             height="25"
             class="icon_footer"
@@ -142,15 +142,15 @@
           />
         </a>
         <img
-          src="../static/images/icons/notification.svg"
+          src="{{ url_for('static', filename='images/icons/notification.svg')}}"
           width="25"
           height="25"
           class="icon_footer"
           alt="icono de notificaciones"
         />
-        <a href="./publicacion.html">
+        <a href="/publicacion.html">
           <img
-            src="../static/images/icons/plus.svg"
+            src="{{ url_for('static', filename='images/icons/plus.svg')}}"
             width="25"
             height="25"
             class="icon_footer"
@@ -158,15 +158,15 @@
           />
         </a>
         <img
-          src="../static/images/icons/chat.svg"
+          src="{{ url_for('static', filename='images/icons/chat.svg')}}"
           width="25"
           height="25"
           class="icon_footer"
           alt="icono del chat"
         />
-        <a href="./ver-perfil.html">
+        <a href="/ver-perfil.html">
           <img
-            src="../static/images/icons/avatar_women.svg"
+            src="{{ url_for('static', filename='images/icons/avatar_women.svg')}}"
             width="25"
             height="25"
             class="icon_footer"
@@ -178,46 +178,46 @@
 
     <!-- Sidebar en desktop -->
     <div class="sidebar col-lg-4 d-none d-lg-block">
-      <a href="./home.html" class="item_sidebar">
+      <a href="/" class="item_sidebar">
         <img
-          src="../static/images/icons/home_white.svg"
+          src="{{ url_for('static', filename='images/icons/home_white.svg')}}"
           alt="icono de home"
         />
         <p class="title_sidebar">Home</p>
       </a>
       <a class="item_sidebar">
         <img
-          src="../static/images/icons/notifications_white.svg"
+          src="{{ url_for('static', filename='images/icons/notifications_white.svg')}}"
           alt="icono de notificaciones"
         />
         <p class="title_sidebar">Notificaciones</p>
       </a>
       <a class="item_sidebar" href="-/publicacion">
         <img
-          src="../static/images/icons/plus_white.svg"
+          src="{{ url_for('static', filename='images/icons/plus_white.svg')}}"
           alt="icono de crear publicacion"
         />
         <p class="title_sidebar">Crear publicación</p>
       </a>
       <a class="item_sidebar">
         <img
-          src="../static/images/icons/chat_white.svg"
+          src="{{ url_for('static', filename='images/icons/chat_white.svg')}}"
           alt="icono del chat"
         />
         <p class="title_sidebar">Chat</p>
       </a>
-      <a href="./ver-perfil.html" class="item_sidebar">
+      <a href="/ver-perfil.html" class="item_sidebar">
         <img
           width="50"
           height="50"
-          src="../static/images/icons/avatar_women.svg"
+          src="{{ url_for('static', filename='images/icons/avatar_women.svg')}}"
           alt="icono de mi perfil"
         />
         <p class="title_sidebar">Mi Perfil</p>
       </a>
       <a class="item_sidebar exit">
         <img
-          src="../static/images/icons/exit_white.svg"
+          src="{{ url_for('static', filename='images/icons/exit_white.svg')}}"
           alt="icono de cerrar sesion"
         />
         <p class="title_sidebar">Cerrar sesión</p>
