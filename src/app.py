@@ -40,5 +40,10 @@ def perfil2():
 def perfil3():
     return render_template("ver-perfil3.html")
 
+
+@app.route('/editarperfil')
+def editarPerfil():
+    return render_template("editar-perfil.html")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')     # open for everyone
