@@ -2,10 +2,12 @@ version: "3.8"
 services:
   app:
     build: .
-    ports:
-      - "5000:5000"
     depends_on:
       - bd
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./src:/workdir/src
   bd:
     image: mongo:5.0
     restart: always
@@ -15,4 +17,4 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - ./mongo-volume:/data/db
+        - ./mongo-volume:/data/db

@@ -12,7 +12,7 @@
 
     <link
       rel="icon"
-      href="../../app/static/images/favicon.ico"
+      href="../static/images/favicon.ico"
       type="image/x-icon"
     />
 
@@ -20,9 +20,10 @@
     <link rel="stylesheet" href="../static/css/home.css" type="text/css" />
     <link
       rel="stylesheet"
-      href="../../app/static/css/publicacion.css"
+      href="../static/css/notificaciones.css"
       type="text/css"
     />
+    
 
     <link
       rel="stylesheet"
@@ -42,72 +43,97 @@
           <div class="title_page">
             <a href="./home.html">
               <img
-                src="../../app/static/images/icons/arrow_left.svg"
+                src="../static/images/icons/arrow_left.svg"
                 class="arrow"
                 alt="flecha para volver"
               />
             </a>
-            <h1 class="title_text">Publicación</h1>
+            <h1 class="title_text">Notificaciones</h1>
           </div>
+          <!---------notificaciones------------->
           <form action="">
             <!-------- Crear publicacion  ---------->
-            <div class="publicacion">
-              <div class="head_publicacion">
+            <div class="notificacion">
+              <div class="comentario_item">
                 <img
-                  src="../../app/static/images/icons/avatar_women.svg"
-                  width="46"
-                  height="46"
-                  class="avatar_publicacion"
+                  class="avatar"
+                  src="../static/images/png/avatar_man5.png"
                   alt="foto de perfil del usuario"
                 />
-                <input
-                  type="text"
-                  placeholder="¿Qué estas pensando? ¿Qué sientes?"
-                  class="input_caption"
-                />
-              </div>
-              <label for="file" class="multimedia">
-                <div class="btn_multimedia">
-                  <img
-                    class="icon_multimedia"
-                    src="../../app/static/images/icons/multimedia.svg"
-                    alt="icono de multimedia"
-                  />
+                <div class="comentario">
+                  <div class="nombre">
+                    <p class="nombre_comentario">Juanh</p>
+                    <p class="comentario_texto">
+                      ha comentado tu publicación: ‘Que guapa’
+                    </p>
+                    
+                  </div>
+                  <div class="publicacion">
+                    <img
+                      class="avatar"
+                      src="../static/images/png/publicacion.png"
+                      alt="foto de publicacion"
+                    />
+                  </div>
                 </div>
-                <span class="texto_multimedia">Foto/video/audio</span>
-              </label>
-              <input
-                id="file"
-                type="file"
-                name="file"
-                accept="video/*, audio/*, image/*"
-                class="d-none"
-                capture="environment"
-              />
+              </div>
+
+              <div class="comentario_item">
+                <img
+                  class="avatar"
+                  src="../static/images/png/avatar_woman.png"
+                  alt="foto de perfil del usuario"
+                />
+                <div class="comentario">
+                  <div class="nombre">
+                    <p class="nombre_comentario">Maria</p>
+                    <p class="comentario_texto">
+                      ha comentado tu publicación: ‘Que Genial’
+                    </p>
+                    
+                  </div>
+                  <div class="publicacion">
+                    <img
+                      class="avatar"
+                      src="../static/images/png/publicacion.png"
+                      alt="foto de publicacion"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="comentario_item">
+                <img
+                  class="avatar"
+                  src="../static/images/png/avatar_man4.png"
+                  alt="foto de perfil del usuario"
+                />
+                <div class="comentario">
+                  <div class="nombre">
+                    <p class="nombre_comentario">Julio33</p>
+                    <p class="comentario_texto">
+                      te ha enviado una solicitud.
+                    </p>
+                    
+                  </div>
+                  <div class="btn_acerptar">
+                    <input
+                      type="submit"
+                      value="Aceptar"
+                      class="btn_aceptar_inivitacion"
+                    />
+                  </div>
+                </div>
+              </div>
+              
             </div>
-            <!------ Privacidad ---------->
-            <div class="privacidad">
-              <label for="tipo" class="label_privacidad"
-                >Privacidad de la publicación</label
-              >
-              <select name="tipo" id="tipo" class="select_publicacion">
-                <option value="publica">Pública</option>
-                <option value="privada">Privada</option>
-              </select>
-            </div>
-            <div class="btn_cargar">
-              <input
-                type="submit"
-                value="Cargar"
-                class="btn_cargar_publicacion"
-              />
-            </div>
+            
           </form>
           <!---------- Footer -------------->
           <div class="footer d-lg-none">
-            <a href="./app/templates/home.html">
+            <a href=".home.html">
               <img
-                src="../../app/static/images/icons/home.svg"
+                src="../static/images/icons/home.svg"
                 width="25"
                 height="25"
                 class="icon_footer"
@@ -115,15 +141,15 @@
               />
             </a>
             <img
-              src="../../app/static/images/icons/notification.svg"
+              src="../static/images/icons/notification.svg"
               width="25"
               height="25"
               class="icon_footer"
               alt="icono de notificaciones"
             />
-            <a href="./app/templates/publicacion.html">
+            <a href="./publicacion.html">
               <img
-                src="../../app/static/images/icons/plus_fill.svg"
+                src="./app/static/images/icons/plus_fill.svg"
                 width="25"
                 height="25"
                 class="icon_footer"
@@ -131,14 +157,14 @@
               />
             </a>
             <img
-              src="../../app/static/images/icons/chat.svg"
+              src="../static/images/icons/chat.svg"
               width="25"
               height="25"
               class="icon_footer"
               alt="icono del chat"
             />
             <img
-              src="../../app/static/images/icons/avatar_women.svg"
+              src="../static/images/icons/avatar_women.svg"
               width="25"
               height="25"
               class="icon_footer"
@@ -149,30 +175,30 @@
 
         <!-- Sidebar en desktop -->
         <div class="sidebar col-lg-4 d-none d-lg-block">
-          <a href="../../app/templates/home.html" class="item_sidebar">
+          <a href=".home.html" class="item_sidebar">
             <img
-              src="../../app/static/images/icons/home_white_outline.svg"
+              src="../static/images/icons/home_white_outline.svg"
               alt="icono de home"
             />
             <p class="title_sidebar">Home</p>
           </a>
           <a class="item_sidebar">
             <img
-              src="../../app/static/images/icons/notifications_white.svg"
+              src="../static/images/icons/notifications_white.svg"
               alt="icono de notificaciones"
             />
             <p class="title_sidebar">Notificaciones</p>
           </a>
           <a class="item_sidebar" href="./publicacion.html">
             <img
-              src="../../app/static/images/icons/plus_fill_white.svg"
+              src="../static/images/icons/plus_white.svg"
               alt="icono de crear publicacion"
             />
             <p class="title_sidebar">Crear publicación</p>
           </a>
           <a class="item_sidebar">
             <img
-              src="../../app/static/images/icons/chat_white.svg"
+              src="../static/images/icons/chat_white.svg"
               alt="icono del chat"
             />
             <p class="title_sidebar">Chat</p>
@@ -181,14 +207,14 @@
             <img
               width="50"
               height="50"
-              src="../../app/static/images/icons/avatar_women.svg"
+              src="../static/images/icons/avatar_women.svg"
               alt="icono de mi perfil"
             />
             <p class="title_sidebar">Mi Perfil</p>
           </a>
-          <a class="item_sidebar exit">
+          <a href="./login.html" class="item_sidebar exit">
             <img
-              src="../../app/static/images/icons/exit_white.svg"
+              src="../static/images/icons/exit_white.svg"
               alt="icono de cerrar sesion"
             />
             <p class="title_sidebar">Cerrar sesión</p>
