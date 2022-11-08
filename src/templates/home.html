@@ -1,243 +1,115 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="../static/css/home.css" type="text/css" />
+{% endblock %}
+{% block content %}
+  <div class="form-group search">
+    <!-- Buscador -->
+    <img
+      class="search_icon"
+      src="../static/images/icons/search.svg"
+      alt="icono de lupa"
     />
-
-    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon" />
-
-    <link rel="stylesheet" href="../static/css/index.css" type="text/css" />
-    <link rel="stylesheet" href="../static/css/home.css" type="text/css" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <input
+      type="text"
+      id="inputSearch"
+      placeholder="Buscar"
+      class="form-control"
     />
-
-    <title>ATI [UCV] 2022-1</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-8">
-          <div class="form-group search">
-            <!-- Buscador -->
-            <img
-              class="search_icon"
-              src="../../app/static/images/icons/search.svg"
-              alt="icono de lupa"
-            />
-            <input
-              type="text"
-              id="inputSearch"
-              placeholder="Buscar"
-              class="form-control"
-            />
-          </div>
-          <!-------- Publicacion con imagen -------->
-          <div class="card">
-            <div class="head_card">
-              <a href="./perfil">
-              <img
-                src="../../app/static/images/png/avatar_man.png"
-                class="avatar"
-                alt="foto de perfil del usuario"
-              />
-              <div class="name_date_card">
-                <p class="name_card">Eduardo Yanez</p>
-              </a>
-                <p class="date_card">24/10/2022 6:25PM</p>
-              </div>
-            </div>
-            <p class="caption">El nuevo preparador es genial!!</p>
-            <!-- imagen -->
-            <img
-              src="../../app/static/images/png/card.png"
-              class="cover_card"
-              alt="foto de la publicacion"
-            />
-            <!-- comentarios -->
-            <div class="comments">
-              <a href="./comentarios.html">
-                <p class="comments_card">Ver todos los comentarios</p>
-              </a>
-              <div class="comments_card_icon">
-                <img
-                  class="comment_icon"
-                  src="../../app/static/images/icons/chat_fill_black.svg"
-                  alt="icono de comentarios"
-                />
-                <p class>57</p>
-              </div>
-            </div>
-          </div>
-
-          <!------- Publicacion de texto ------->
-          <div class="card">
-            <div class="head_card">
-              <a href="./ver-perfil2.html">
-              <img
-                src="../../app/static/images/png/avatar_man2.png"
-                width="46"
-                height="46"
-                class="avatar"
-                alt="foto de perfil del usuario"
-              />
-              <div class="name_date_card">
-                <p class="name_card">Juan Jose Perez</p>
-              </a>
-                <p class="date_card">24/10/2022 3:00PM</p>
-              </div>
-            </div>
-            <p class="caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
-            </p>
-          </div>
-
-          <!-------- Publicacion de texto ------->
-          <div class="card">
-            <div class="head_card">
-              <a href="./ver-perfil3.html">
-              <img
-                src="../../app/static/images/png/avatar_x.png"
-                width="46"
-                height="46"
-                class="avatar"
-                alt="foto de perfil del usuario"
-              />
-              <div class="name_date_card">
-                <p class="name_card">Carlos Miguel</p>
-              </a>
-                <p class="date_card">24/10/2022 3:00PM</p>
-              </div>
-            </div>
-            <p class="caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
-            </p>
-            <!-- comentarios -->
-            <div class="comments">
-              <a href="./comentarios.html">
-                <p class="comments_card">Ver todos los comentarios</p>
-              </a>
-              <div class="comments_card_icon">
-                <img
-                  class="comment_icon"
-                  src="../../app/static/images/icons/chat_fill_black.svg"
-                  alt="icono de comentarios"
-                />
-                <p class>57</p>
-              </div>
-            </div>
-          </div>
-
-          <!---------- Footer -------------->
-          <div class="footer d-lg-none">
-            <a href="./home.html">
-              <img
-                src="../static/images/icons/home_fill.svg"
-                width="25"
-                height="25"
-                class="icon_footer"
-                alt="icono de home"
-              />
-            </a>
-            <img
-              src="../static/images/icons/notification.svg"
-              width="25"
-              height="25"
-              class="icon_footer"
-              alt="icono de notificaciones"
-            />
-            <a href="./app/templates/publicacion.html">
-              <img
-                src="../static/images/icons/plus.svg"
-                width="25"
-                height="25"
-                class="icon_footer"
-                alt="icono de crear publicacion"
-              />
-            </a>
-            <img
-              src="../static/images/icons/chat.svg"
-              width="25"
-              height="25"
-              class="icon_footer"
-              alt="icono del chat"
-            />
-            <a href="./perfil">
-              <img
-                src="../static/images/icons/avatar_women.svg"
-                width="25"
-                height="25"
-                class="icon_footer"
-                alt="icono de mi perfil"
-              />
-            </a>
-          </div>
-        </div>
-
-        <!-- Sidebar en desktop -->
-        <div class="sidebar col-lg-4 d-none d-lg-block">
-          <a href="./home.html" class="item_sidebar">
-            <img
-              src="../static/images/icons/home_white.svg"
-              alt="icono de home"
-            />
-            <p class="title_sidebar">Home</p>
-          </a>
-          <a class="item_sidebar">
-            <img
-              src="../static/images/icons/notifications_white.svg"
-              alt="icono de notificaciones"
-            />
-            <p class="title_sidebar">Notificaciones</p>
-          </a>
-          <a class="item_sidebar" href="./publicacion.html">
-            <img
-              src="../static/images/icons/plus_white.svg"
-              alt="icono de crear publicacion"
-            />
-            <p class="title_sidebar">Crear publicación</p>
-          </a>
-          <a class="item_sidebar">
-            <img
-              src="../static/images/icons/chat_white.svg"
-              alt="icono del chat"
-            />
-            <p class="title_sidebar">Chat</p>
-          </a>
-          <a href="/perfil" class="item_sidebar">
-            <img
-              width="50"
-              height="50"
-              src="../static/images/icons/avatar_women.svg"
-              alt="icono de mi perfil"
-            />
-            <p class="title_sidebar">Mi Perfil</p>
-          </a>
-          <a class="item_sidebar exit">
-            <img
-              src="../static/images/icons/exit_white.svg"
-              alt="icono de cerrar sesion"
-            />
-            <p class="title_sidebar">Cerrar sesión</p>
-          </a>
-        </div>
+  </div>
+  <!-------- Publicacion con imagen -------->
+  <div class="card">
+    <div class="head_card">
+      <a href="/perfil">
+      <img
+        src="../static/images/png/avatar_man.png"
+        class="avatar"
+        alt="foto de perfil del usuario"
+      />
+      <div class="name_date_card">
+        <p class="name_card">Eduardo Yanez</p>
+      </a>
+        <p class="date_card">24/10/2022 6:25PM</p>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+    <p class="caption">El nuevo preparador es genial!!</p>
+    <!-- imagen -->
+    <img
+      src="../static/images/png/card.png"
+      class="cover_card"
+      alt="foto de la publicacion"
+    />
+    <!-- comentarios -->
+    <div class="comments">
+      <a href="/comentarios">
+        <p class="comments_card">Ver todos los comentarios</p>
+      </a>
+      <div class="comments_card_icon">
+        <img
+          class="comment_icon"
+          src="../static/images/icons/chat_fill_black.svg"
+          alt="icono de comentarios"
+        />
+        <p class>57</p>
+      </div>
+    </div>
+  </div>
+
+  <!------- Publicacion de texto ------->
+  <div class="card">
+    <div class="head_card">
+      <a href="/perfil2">
+      <img
+        src="../static/images/png/avatar_man2.png"
+        width="46"
+        height="46"
+        class="avatar"
+        alt="foto de perfil del usuario"
+      />
+      <div class="name_date_card">
+        <p class="name_card">Juan Jose Perez</p>
+      </a>
+        <p class="date_card">24/10/2022 3:00PM</p>
+      </div>
+    </div>
+    <p class="caption">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
+    </p>
+  </div>
+
+  <!-------- Publicacion de texto ------->
+  <div class="card">
+    <div class="head_card">
+      <a href="/perfil3">
+      <img
+        src="../static/images/png/avatar_x.png"
+        width="46"
+        height="46"
+        class="avatar"
+        alt="foto de perfil del usuario"
+      />
+      <div class="name_date_card">
+        <p class="name_card">Carlos Miguel</p>
+      </a>
+        <p class="date_card">24/10/2022 3:00PM</p>
+      </div>
+    </div>
+    <p class="caption">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
+    </p>
+    <!-- comentarios -->
+    <div class="comments">
+      <a href="/comentarios">
+        <p class="comments_card">Ver todos los comentarios</p>
+      </a>
+      <div class="comments_card_icon">
+        <img
+          class="comment_icon"
+          src="../static/images/icons/chat_fill_black.svg"
+          alt="icono de comentarios"
+        />
+        <p class>57</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}
