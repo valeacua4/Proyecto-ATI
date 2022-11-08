@@ -1,11 +1,15 @@
 {% extends "base.html" %} {% block head %}
-<link rel="stylesheet" href="../static/css/publicacion.css" type="text/css" />
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/publicacion.css')}}"
+  type="text/css"
+/>
 {% endblock %} {% block content %}
 <!-------- Titulo de la pagina  ------->
 <div class="title_page">
   <a href="/">
     <img
-      src="../static/images/icons/arrow_left.svg"
+      src="{{ url_for('static', filename='images/icons/arrow_left.svg')}}"
       class="arrow"
       alt="flecha para volver"
     />
@@ -17,7 +21,7 @@
   <div class="publicacion">
     <div class="head_publicacion">
       <img
-        src="../static/images/icons/avatar_women.svg"
+        src="{{ url_for('static', filename='images/svg/eduardo_yanez.svg')}}"
         width="46"
         height="46"
         class="avatar_publicacion"
@@ -33,7 +37,7 @@
       <div class="btn_multimedia">
         <img
           class="icon_multimedia"
-          src="../static/images/icons/multimedia.svg"
+          src="{{ url_for('static', filename='images/icons/multimedia.svg')}}"
           alt="icono de multimedia"
         />
       </div>
