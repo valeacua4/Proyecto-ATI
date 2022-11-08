@@ -26,7 +26,7 @@ def notificaciones():
 
 @app.route('/chat')
 def chat():
-    return render_template("chat.html")
+    return render_template("Chat2.html")
 
 @app.route('/perfil')
 def perfil():
