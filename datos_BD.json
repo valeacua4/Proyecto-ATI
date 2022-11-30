@@ -39,6 +39,7 @@ var listado = [
 	"ci":"18002106",
 	"genero":"masculino",
 	"fecha_nacimiento":"19/12/1988"
+    "foto_perfil":""
     },
     {	
 	"nombre":"Jimmy E. Espino B.",
@@ -52,6 +53,7 @@ var listado = [
 	"ci":"18009154",
 	"genero":"Masculino",
 	"fecha_nacimiento":"28/12/1990"
+    "foto_perfil":""
     },
     {	
 	"nombre":"Karl Correa",
@@ -65,6 +67,7 @@ var listado = [
 	"ci":"18110561",
 	"genero": "masculino",
 	"fecha_nacimiento":"23/04/1988"
+    "foto_perfil":""
     },
     {
         "nombre": "Diego Branco",
@@ -77,7 +80,8 @@ var listado = [
         "email": "diegoh89@gmail.com",
         "ci": "18443368",
         "genero": "masculino",
-        "fecha_nacimiento": "14/06/1989"
+        "fecha_nacimiento": "14/06/1989
+        "foto_perfil":"""
     },
     {	
 	"nombre":"Hector Palomino",
@@ -91,6 +95,7 @@ var listado = [
 	"ci":"18487832",
 	"genero": "masculino",
 	"fecha_nacimiento":"28/04/1990"
+    "foto_perfil":""
     },
     {
         "nombre": "Darwin R. Guaimacuto N.",
@@ -104,7 +109,8 @@ var listado = [
         "email": "dguaima@gmail.com",
         "ci": "18819509",
         "genero": "Masculino",
-        "fecha_nacimiento": "31/03/1990"
+        "fecha_nacimiento": "31/03/1990
+        "foto_perfil":"""
     },
     {	
 	"nombre":"Leopoldo Enrique Izquierdo Carias",
@@ -118,6 +124,7 @@ var listado = [
 	"ci":"18829705",
 	"genero":"masculino",
 	"fecha_nacimiento":"12/09/1988"
+    "foto_perfil":""
     },
     {
         "nombre": "Jorge Gavidia",  
@@ -131,6 +138,7 @@ var listado = [
         "ci":"18836874",    
         "genero":"masculino",
         "fecha_nacimiento":"24/04/1989"
+        "foto_perfil":""
     },
     {	
 	"nombre":"Felix Garcia",
@@ -144,6 +152,7 @@ var listado = [
 	"ci":"18938455",
 	"genero":"masculino",
 	"fecha_nacimiento":"26/07/1989"
+    "foto_perfil":""
     },
     {
         "nombre":"Zulay Pineda",
@@ -157,6 +166,7 @@ var listado = [
         "ci":"19267152",
         "genero":"femenino",
         "fecha_nacimiento":"16/01/1990"
+        "foto_perfil":""
     },
     {
         "nombre": "Adrian Montes de Oca",
@@ -169,7 +179,8 @@ var listado = [
         "email": "adrian.a.montesdeoca.m@gmail.com",
         "ci": "19334139",
         "genero": "Masculino",
-        "fecha_nacimiento": "11/01/1989"
+        "fecha_nacimiento": "11/01/1989
+        "foto_perfil":"""
     },
     {
         "nombre":"Raquel Escalante Salazar",
@@ -183,6 +194,7 @@ var listado = [
         "ci":"19371273",
         "genero":"femenino",
         "fecha_nacimiento":"16/08/1990"
+        "foto_perfil":""
     },
     {
         "nombre":"Gabriel Restrepo",
@@ -196,6 +208,7 @@ var listado = [
         "ci":"19379860",
         "genero":"Masculino",
         "fecha_nacimiento":"25/05/1989"
+        "foto_perfil":""
     },
     {
         "nombre":"Rama Gopal Villalobos",
@@ -209,6 +222,7 @@ var listado = [
         "ci": "19395391",
         "genero":"masculino",
         "fecha_nacimiento":"15/09/1982"
+        "foto_perfil":""
     },
     {
         "nombre": "Katherine Colina",
@@ -220,7 +234,8 @@ var listado = [
         "lenguajes_programacion":["C/C++","SQL","Java"],
         "ci":"19499302",
         "genero":"femenino",
-        "fecha_nacimiento":"28/11/1990",
+        "fecha_nacimiento":"28/11/1990"
+        "foto_perfil":"",
         "email":"kathymcolina@gmail.com"
     },
     {
@@ -235,6 +250,7 @@ var listado = [
         "ci":"19558625",
         "genero":"masculino",
         "fecha_nacimiento":"29/09/1991"
+        "foto_perfil":""
     },
     {
         "nombre":"Yesenia del Carmen Gil Casique",
@@ -248,6 +264,7 @@ var listado = [
          "ci": "9932730",
          "genero":"femenino", 
          "fecha_nacimiento":"13/09/1990"
+         "foto_perfil":""
      },
      {	
 	"nombre":"Angel Acosta",
@@ -261,6 +278,7 @@ var listado = [
 	"ci":20117857,
 	"genero":"masculino",
 	"fecha_nacimiento":"28/05/1991"
+    "foto_perfil":""
     },
     {	
 	"nombre":"Maria Eugenia Pulido",
@@ -274,6 +292,7 @@ var listado = [
 	"ci":"20289633",
 	"genero": "femenino",
 	"fecha_nacimiento":"00/00/1900"
+    "foto_perfil":""
     },
     {	
 	"nombre":"Cesar Salazar",
@@ -286,7 +305,7 @@ var listado = [
 	"email":"bitemecesar@gmail.com",
 	"ci":"27223325",
 	"genero": "masculino",
-	"fecha_nacimiento":"16/03/1999",
+	"fecha_nacimiento":"16/03/1999"
 	"foto_perfil": "27223325.jpeg"
     },
     {
@@ -342,7 +361,8 @@ var listado = [
     "email": "jonlleucv@gmail.com",
     "ci": "82298598",
     "genero": "Masculino",
-    "fecha_nacimiento": "19/07/1992"
+    "fecha_nacimiento": "19/07/1992",
+    "foto_perfil": "82298598.jpg"
     }
 ]
 use miapp_ati

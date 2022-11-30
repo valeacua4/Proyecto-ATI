@@ -1,8 +1,18 @@
 #!/usr/bin/env python
 from flask import Flask, render_template
+from flask_socketio import SocketIO, send
 import flask
 
 app = flask.Flask(__name__)
+
+app.config['SECRET'] = "secret!123"
+socketio = SocketIO(app, cors_allowed_origins="*")
+
+@socketio.on('message')
+def handle_message(message):
+    print("Mensaje Recibido: " + message)
+    if message != "Conectado":
+        send(message, broadcast=True)
 
 @app.route('/')
 def home():
