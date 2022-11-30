@@ -7,3 +7,6 @@ db.createCollection('pruba')
 db.pruba.insert({hola:'chaoo'})
 show dbs
 db.pruba.find().pretty()
+show dbs
+mongo
+show dbs

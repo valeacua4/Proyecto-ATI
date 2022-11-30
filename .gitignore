@@ -1,0 +1,12 @@
+/mongo-volume
+
+#pycache
+/_pycache_
+_pycache_/
+_pycache_
+*.pyc
+*.py[cod]
+*$py.class
+pycache/
+/src/__pycache__
+

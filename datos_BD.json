@@ -345,3 +345,16 @@ var listado = [
     "fecha_nacimiento": "19/07/1992"
     }
 ]
+use miapp_ati
+db.createCollection('usuarios')
+db.createCollection('amigo')
+db.createCollection('publicacion')
+db.createCollection('media')
+db.createCollection('comentario')
+db.createCollection('chat')
+db.createCollection('mensaje')
+db.createCollection('configuracion')
+db.createCollection('lenguaje')
+db.createCollection('perfil')
+db.createCollection('notificacion')
+db.usuarios.insert(listado)
