@@ -1,0 +1,9 @@
+shows dbs
+shows dbs
+show dbs
+show dbs
+use miapp
+db.createCollection('pruba')
+db.pruba.insert({hola:'chaoo'})
+show dbs
+db.pruba.find().pretty()

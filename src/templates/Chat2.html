@@ -31,7 +31,7 @@
 {% endblock %} {% block content %}
 		<aside>
 			<header>
-				<button class="retorno"><i class="fa fa-angle-left fa-lg"></i></button>
+				<button class="retorno" ref="/home"><i class="fa fa-angle-left fa-lg"></i></button>
 				<h1 id="titulo">Chats</h1>
 			</header>
 		</aside>
@@ -116,96 +116,4 @@
 					<i class="fa fa-light fa-comment-lines fa-lg"></i>
 				</section>
 			</div>
-
-
-			<!-- Sidebar en desktop -->
-			<div class="sidebar col-lg-4 d-none d-lg-block">
-				<a href=".home.html" class="item_sidebar">
-				  <img
-					src="{{ url_for('static', filename='images/icons/home_white_outline.svg')}}"
-					alt="icono de home"
-				  />
-				  <p class="title_sidebar">Home</p>
-				</a>
-				<a class="item_sidebar">
-				  <img
-					src="{{ url_for('static', filename='images/icons/notifications_white.svg')}}"
-					alt="icono de notificaciones"
-				  />
-				  <p class="title_sidebar">Notificaciones</p>
-				</a>
-				<a class="item_sidebar" href="./publicacion.html">
-				  <img
-					src="{{ url_for('static', filename='images/icons/plus_white.svg')}}"
-					alt="icono de crear publicacion"
-				  />
-				  <p class="title_sidebar">Crear publicación</p>
-				</a>
-				<a class="item_sidebar">
-				  <img
-					src="{{ url_for('static', filename='images/icons/chat_white.svg')}}"
-					alt="icono del chat"
-				  />
-				  <p class="title_sidebar">Chat</p>
-				</a>
-				<a class="item_sidebar">
-				  <img
-					width="50"
-					height="50"
-					src="{{ url_for('static', filename='images/icons/avatar_women.svg')}}"
-					alt="icono de mi perfil"
-				  />
-				  <p class="title_sidebar">Mi Perfil</p>
-				</a>
-				<a href="/login.html" class="item_sidebar exit">
-				  <img
-					src="../static/images/icons/exit_white.svg"
-					alt="icono de cerrar sesion"
-				  />
-				  <p class="title_sidebar">Cerrar sesión</p>
-				</a>
-			  </div>
-		</div>
-
-
-			<!---------- Footer -------------->
-			<div class="footer d-lg-none">
-				<a href="/home.html">
-				<img
-					src="{{ url_for('static', filename='images/icons/home_fill.svg')}}"
-					width="25"
-					height="25"
-					class="icon_footer"
-				/>
-				</a>
-				<img
-				src="{{ url_for('static', filename='images/icons/notification.svg')}}"
-				width="25"
-				height="25"
-				class="icon_footer"
-				/>
-				<a href="/publicacion.html">
-				<img
-					src="{{ url_for('static', filename='images/icons/plus.svg')}}"
-					width="25"
-					height="25"
-					class="icon_footer"
-				/>
-				</a>
-				<img
-				src="{{ url_for('static', filename='images/icons/chat.svg')}}"
-				width="25"
-				height="25"
-				class="icon_footer"
-				/>
-				<img
-				src="{{ url_for('static', filename='images/icons/avatar_women.svg')}}"
-				width="25"
-				height="25"
-				class="icon_footer"
-				/>
-			</div>
-			</div>
-			</div>
-		</div>
 {% endblock %}
