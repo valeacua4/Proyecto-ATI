@@ -10,11 +10,12 @@ header{
   font-family: 'Inter UI', sans-serif;
   text-align: center;
   font-size: 60px;
+  margin-top: 0%;
 }
 
 .tit1{
   font-size: 50px;
-  margin-top: -2%;
+  
 }
 
 
@@ -23,6 +24,7 @@ header{
   flex-direction: column;
   align-items: center;
   font-family: 'Inter UI', sans-serif;
+  margin-top: 1%;
 }
 
 a { 
@@ -77,9 +79,6 @@ a {
 
 .tit2{
   font-size: 26px;
-  margin-top: -2%;
-}
-.lineOr{
   margin-top: -1%;
 }
 
@@ -135,7 +134,7 @@ a {
 
 .entrar{
   background-color: #006175;
-  width:500px;
+  width: 500px;
   height: 48px;
   border: none;
   border-radius: 10px;
@@ -143,10 +142,14 @@ a {
   color: white;
   text-align: center;
 }
+
+#errorL{
+  color: red;
+}
 /*------Responsive para mobile-----*/
 @media only screen and (max-width: 360px){
   header{
-    width: 350px;    
+    width: 430px;    
     margin-right: 0%;
   }
   .tit{
@@ -170,11 +173,6 @@ a {
     width: 28px;
     height:28px;
     margin:10px;
-  }
-  .lineOr{
-    font-size: 20px;
-    text-align: center;
-    margin-left: 30px;
   }
   
   .tit2{

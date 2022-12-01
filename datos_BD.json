@@ -5,376 +5,804 @@ var listado = [
         "color_favorito": "Naranja y Negro",
         "libro_favorito": "Ilusiones de Richard Bach",
         "musica_favorita": "Romantica y Salsa",
-        "video_juegos": ["Call of Duty","Minecraft"],
-        "lenguajes_programacion": ["PL/SQL", "Java", "JavaScript"],
+        "video_juegos": [
+            "Call of Duty",
+            "Minecraft"
+        ],
+        "lenguajes_programacion": [
+            "PL/SQL",
+            "Java",
+            "JavaScript"
+        ],
         "email": "bettytores@gmail.com",
         "ci": "13852255",
         "genero": "femenino",
         "fecha_nacimiento": "17/11/1979",
-        "foto_perfil": "13852255.png"
+        "foto_perfil": "13852255.png",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "profesor",
+        "password": "13852255"
     },
-    {	
-	"nombre":"María Paula Herrero",
-	"descripcion":"Soy licenciada en Computación de la UCV. Me desempeño en el área de ingeniería web y actualmente doy clases en la Escuela de Computación de la UCV. Además, desde el 2007 he venido desarrollando una segunda carrera como escritora e ilustradora. He participado en diversos talleres de escritura y actualmente estudio diseño gráfico en Prodiseño.",
-	"color_favorito": "Azul",
-	"libro_favorito": ["El Señor de los Anillos"],
-	"musica_favorita": ["Cualquiera menos regueton"],
-	"video_juegos": ["Pokemón Go"],
-	"lenguajes_programacion":["java", "php", "perl", "ruby", "python", "c++"],
-	"email":"mpaulaherrero@gmail.com",
-	"ci":"14444733",
-	"genero": "femenino",
-	"fecha_nacimiento":"18/08/1972",
-	"foto_perfil": "14444733.jpg"
+    {
+        "nombre": "María Paula Herrero",
+        "descripcion": "Soy licenciada en Computación de la UCV. Me desempeño en el área de ingeniería web y actualmente doy clases en la Escuela de Computación de la UCV. Además, desde el 2007 he venido desarrollando una segunda carrera como escritora e ilustradora. He participado en diversos talleres de escritura y actualmente estudio diseño gráfico en Prodiseño.",
+        "color_favorito": "Azul",
+        "libro_favorito": [
+            "El Señor de los Anillos"
+        ],
+        "musica_favorita": [
+            "Cualquiera menos regueton"
+        ],
+        "video_juegos": [
+            "Pokemón Go"
+        ],
+        "lenguajes_programacion": [
+            "java",
+            "php",
+            "perl",
+            "ruby",
+            "python",
+            "c++"
+        ],
+        "email": "mpaulaherrero@gmail.com",
+        "ci": "14444733",
+        "genero": "femenino",
+        "fecha_nacimiento": "18/08/1972",
+        "foto_perfil": "14444733.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "profesor",
+        "password": "14444733"
     },
-    {	
-	"nombre":"Abelardo José Moreno Carballeda",
-	"descripcion":"Soy estudiante de computación en el último semestre de la carrera. Me interesa el área de Inteligencia de Negocios y actualmente trabajo en el Fondo de Valores Inmobiliarios.",
-	"color_favorito": "Verde",
-	"libro_favorito": ["The Hitchhiker's Guide to the Galaxy."],
-	"musica_favorita": ["Retro."],
-	"video_juegos": ["Punch-Out","Dark Souls"],
-	"lenguajes_programacion": ["Java", "C", "C++", "Python", "SQL", "Haskell", "Prolog", "Ensamblador"],
-	"email":"abelardo.moreno@gmail.com",
-	"ci":"18002106",
-	"genero":"masculino",
-	"fecha_nacimiento":"19/12/1988"
-    "foto_perfil":""
+    {
+        "nombre": "Abelardo José Moreno Carballeda",
+        "descripcion": "Soy estudiante de computación en el último semestre de la carrera. Me interesa el área de Inteligencia de Negocios y actualmente trabajo en el Fondo de Valores Inmobiliarios.",
+        "color_favorito": "Verde",
+        "libro_favorito": [
+            "The Hitchhiker's Guide to the Galaxy."
+        ],
+        "musica_favorita": [
+            "Retro."
+        ],
+        "video_juegos": [
+            "Punch-Out",
+            "Dark Souls"
+        ],
+        "lenguajes_programacion": [
+            "Java",
+            "C",
+            "C++",
+            "Python",
+            "SQL",
+            "Haskell",
+            "Prolog",
+            "Ensamblador"
+        ],
+        "email": "abelardo.moreno@gmail.com",
+        "ci": "18002106",
+        "genero": "masculino",
+        "fecha_nacimiento": "19/12/1988",
+        "foto_perfil": "18002106.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "18002106"
     },
-    {	
-	"nombre":"Jimmy E. Espino B.",
-	"descripcion":"Soy estudiante de licenciatura de computación de la UCV. Trabajo en el departamento de servicio técnico de una compañía de ventas. Presto trabajo social en un centro juvenil en donde se trabaja con niñ@s de 8 a 17 años, el cual es llevado por la congregación salesiana.Tengo como hobbie el futbol, la animación y el trabajo con material de sonido.",
-	"color_favorito": "Azul",
-	"libro_favorito": ["Símbolo Perdido"],
-	"musica_favorita": ["Electrónica"],
-	"video_juegos":["Assasin Creed"],
-	"lenguajes_programacion": ["Java","C", "HTML"],
-	"email":"jimmyespino415@gmail.com",
-	"ci":"18009154",
-	"genero":"Masculino",
-	"fecha_nacimiento":"28/12/1990"
-    "foto_perfil":""
+    {
+        "nombre": "Jimmy E. Espino B.",
+        "descripcion": "Soy estudiante de licenciatura de computación de la UCV. Trabajo en el departamento de servicio técnico de una compañía de ventas. Presto trabajo social en un centro juvenil en donde se trabaja con niñ@s de 8 a 17 años, el cual es llevado por la congregación salesiana.Tengo como hobbie el futbol, la animación y el trabajo con material de sonido.",
+        "color_favorito": "Azul",
+        "libro_favorito": [
+            "Símbolo Perdido"
+        ],
+        "musica_favorita": [
+            "Electrónica"
+        ],
+        "video_juegos": [
+            "Assasin Creed"
+        ],
+        "lenguajes_programacion": [
+            "Java",
+            "C",
+            "HTML"
+        ],
+        "email": "jimmyespino415@gmail.com",
+        "ci": "18009154",
+        "genero": "Masculino",
+        "fecha_nacimiento": "28/12/1990",
+        "foto_perfil": "18009154.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "18009154"
     },
-    {	
-	"nombre":"Karl Correa",
-	"descripcion":"Soy estudiante de Computación en la UCV. Me interesa el área de innovación tecnológica en el ámbito web. Trabajo en el área de educación a distancia dando soporte a los usuarios del Campus Virtual UCV.",
-	"color_favorito": "Verde",
-	"libro_favorito": ["Guardianes de la noche"],
-	"musica_favorita": ["Cualquiera a excepción del vallenato, cumbia y regueton"],
-	"video_juegos": ["Final fantasy's series", "TES: Skyrim", "League of Legends", "Archeage"],
-	"lenguajes_programacion": ["java", "c/c++", "python"],
-	"email":"karl.correa.88@gmail.com",
-	"ci":"18110561",
-	"genero": "masculino",
-	"fecha_nacimiento":"23/04/1988"
-    "foto_perfil":""
+    {
+        "nombre": "Karl Correa",
+        "descripcion": "Soy estudiante de Computación en la UCV. Me interesa el área de innovación tecnológica en el ámbito web. Trabajo en el área de educación a distancia dando soporte a los usuarios del Campus Virtual UCV.",
+        "color_favorito": "Verde",
+        "libro_favorito": [
+            "Guardianes de la noche"
+        ],
+        "musica_favorita": [
+            "Cualquiera a excepción del vallenato, cumbia y regueton"
+        ],
+        "video_juegos": [
+            "Final fantasy's series",
+            "TES: Skyrim",
+            "League of Legends",
+            "Archeage"
+        ],
+        "lenguajes_programacion": [
+            "java",
+            "c/c++",
+            "python"
+        ],
+        "email": "karl.correa.88@gmail.com",
+        "ci": "18110561",
+        "genero": "masculino",
+        "fecha_nacimiento": "23/04/1988",
+        "foto_perfil": "18110561.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "18110561"
     },
     {
         "nombre": "Diego Branco",
         "descripcion": "Soy un estudiante de computación de la facultad de Ciencias de la Universidad Central de Venezuela, y me planeo graduar con la mención \"Ingeniería de Software\".",
         "color_favorito": "Verde",
-        "libro_favorito": ["La Isla Misteriosa, Julio Verne"],
-        "musica_favorita": ["Soundtracks", "Rock", "Metal"],
-        "video_juegos": ["Final Fantasy", "Pokémon", "Shin Megami Tensei", "etc)"],
-        "lenguajes_programacion": ["C","C++","Python","Java"],
+        "libro_favorito": [
+            "La Isla Misteriosa, Julio Verne"
+        ],
+        "musica_favorita": [
+            "Soundtracks",
+            "Rock",
+            "Metal"
+        ],
+        "video_juegos": [
+            "Final Fantasy",
+            "Pokémon",
+            "Shin Megami Tensei",
+            "etc)"
+        ],
+        "lenguajes_programacion": [
+            "C",
+            "C++",
+            "Python",
+            "Java"
+        ],
         "email": "diegoh89@gmail.com",
         "ci": "18443368",
         "genero": "masculino",
-        "fecha_nacimiento": "14/06/1989
-        "foto_perfil":"""
+        "fecha_nacimiento": "14/06/1989",
+        "foto_perfil": "18443368.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "18443368"
     },
-    {	
-	"nombre":"Hector Palomino",
-	"descripcion":"Soy estudiante de la Licenciatura en Computación de la UCV. Interesado en la Ciencia de Datos y en el desarrollo web. Me gusta leer,estudiar,hacer deporte,escuchar musica_favorita, compartir con amigos, la playa, etc.",
-	"color_favorito": "Azul",
-	"libro_favorito": ["Cien Años de Soledad"],
-	"musica_favorita": ["Cualquiera"],
-	"video_juegos": ["Super Mario", "FIFA", "PES", "Resident Evil"],
-	"lenguajes_programacion":["Java", "C", "C++", "R","SQL"],
-	"email":"hectorjosepalomino@gmail.com",
-	"ci":"18487832",
-	"genero": "masculino",
-	"fecha_nacimiento":"28/04/1990"
-    "foto_perfil":""
+    {
+        "nombre": "Hector Palomino",
+        "descripcion": "Soy estudiante de la Licenciatura en Computación de la UCV. Interesado en la Ciencia de Datos y en el desarrollo web. Me gusta leer,estudiar,hacer deporte,escuchar musica_favorita, compartir con amigos, la playa, etc.",
+        "color_favorito": "Azul",
+        "libro_favorito": [
+            "Cien Años de Soledad"
+        ],
+        "musica_favorita": [
+            "Cualquiera"
+        ],
+        "video_juegos": [
+            "Super Mario",
+            "FIFA",
+            "PES",
+            "Resident Evil"
+        ],
+        "lenguajes_programacion": [
+            "Java",
+            "C",
+            "C++",
+            "R",
+            "SQL"
+        ],
+        "email": "hectorjosepalomino@gmail.com",
+        "ci": "18487832",
+        "genero": "masculino",
+        "fecha_nacimiento": "28/04/1990",
+        "foto_perfil": "18487832.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "18487832"
     },
     {
         "nombre": "Darwin R. Guaimacuto N.",
         "descripcion": "Soy estudiante de Licenciatura en Computación de la UCV, estoy interesado en el área de Big Data, Minería de Datos e Inteligencia de Negocios. Me gusta Jugar Videojuegos, Leer, Hacer Ejercicio, Estudiar, Aprender cosas nuevas, entre otras.",
         "color_favorito": "Negro",
-        "libro_favorito": ["Me gustan varios"],
-        "serie": ["Breaking Bad"],
-        "musica_favorita": ["Rock"],
-        "video_juegos": ["Super Mario", "The Legend of Zelda", "The Last of Us", "Gears of War", "RE", "Silent Hill", "entre otros"],
-        "lenguajes_programacion": ["C++", "HTML", "R", "Phyton", "Java", "PL/SQL"],
+        "libro_favorito": [
+            "Me gustan varios"
+        ],
+        "serie": [
+            "Breaking Bad"
+        ],
+        "musica_favorita": [
+            "Rock"
+        ],
+        "video_juegos": [
+            "Super Mario",
+            "The Legend of Zelda",
+            "The Last of Us",
+            "Gears of War",
+            "RE",
+            "Silent Hill",
+            "entre otros"
+        ],
+        "lenguajes_programacion": [
+            "C++",
+            "HTML",
+            "R",
+            "Phyton",
+            "Java",
+            "PL/SQL"
+        ],
         "email": "dguaima@gmail.com",
         "ci": "18819509",
         "genero": "Masculino",
-        "fecha_nacimiento": "31/03/1990
-        "foto_perfil":"""
-    },
-    {	
-	"nombre":"Leopoldo Enrique Izquierdo Carias",
-	"descripcion":"Soy estudiante de computacion en la Universidad Central de Venezuela. Tengo inclinacion por la rama de computacion grafica, y espero adquirir los suficientes conocimientos de esa área para lograr emprender por mi cuenta desarrollando aplicaciones moviles que hagan uso del API grafico.",
-	"color_favorito": "Verde",
-	"libro_favorito": ["El caballero de la armadura oxidada"],
-	"musica_favorita": ["Reggae"],
-	"video_juegos": ["Zelda: Ocarina Of Time"],
-	"lenguajes_programacion":["Java", "C/C++", "Javascript", "Python"],
-	"email":"leopoldo.izquierdo.xyz@gmail.com",
-	"ci":"18829705",
-	"genero":"masculino",
-	"fecha_nacimiento":"12/09/1988"
-    "foto_perfil":""
+        "fecha_nacimiento": "31/03/1990",
+        "foto_perfil": "18819509.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "18819509"
     },
     {
-        "nombre": "Jorge Gavidia",  
-        "descripcion":"Soy estudiante de la licenciatura de Computación de la UCV. Me especializo en el área de Redes de comunicaciones, servidores y VoIp, trabajo en la empresa Gare Network Developed como analista de redes y sistemas. Combino mi tiempo libre con actividades de deportes extremo como la Escalada, Canyoning, adicionalmente practico el montañismo y excursionismo.",
-        "color_favorito": "Azul", 
-        "libro_favorito":["El Principito"], 
-        "musica_favorita":["En realidad es variado, no me límito a uno solo"], 
-        "video_juegos":["Counter Strike"], 
-        "lenguajes_programacion":["C", "C++", "Java", "Haskell", "Prolog"],
-        "email":"jorgega99@hotmail.com",
-        "ci":"18836874",    
-        "genero":"masculino",
-        "fecha_nacimiento":"24/04/1989"
-        "foto_perfil":""
-    },
-    {	
-	"nombre":"Felix Garcia",
-	"descripcion":"Estudiante de la escuela de computación de la Universidad Central de Venezuela. Preparador del laboratorio de Comunicación de Datos. Gocho de San Cristoche, criado toda mi vida en Caracas, nunca falta un buen avilazo.",
-	"color_favorito": "Azul",
-	"libro_favorito": ["Canción de hielo y Fuego"],
-	"musica_favorita": ["Rock y Pop (80's)"],
-	"video_juegos": ["Rocket League", "Dota2", "Counter Strike Global Offensive"],
-	"lenguajes_programacion":  ["C","C++","Html","Phyton","Java","php"],
-	"email":"FG.SOS.STORE@gmail.com",
-	"ci":"18938455",
-	"genero":"masculino",
-	"fecha_nacimiento":"26/07/1989"
-    "foto_perfil":""
+        "nombre": "Leopoldo Enrique Izquierdo Carias",
+        "descripcion": "Soy estudiante de computacion en la Universidad Central de Venezuela. Tengo inclinacion por la rama de computacion grafica, y espero adquirir los suficientes conocimientos de esa área para lograr emprender por mi cuenta desarrollando aplicaciones moviles que hagan uso del API grafico.",
+        "color_favorito": "Verde",
+        "libro_favorito": [
+            "El caballero de la armadura oxidada"
+        ],
+        "musica_favorita": [
+            "Reggae"
+        ],
+        "video_juegos": [
+            "Zelda: Ocarina Of Time"
+        ],
+        "lenguajes_programacion": [
+            "Java",
+            "C/C++",
+            "Javascript",
+            "Python"
+        ],
+        "email": "leopoldo.izquierdo.xyz@gmail.com",
+        "ci": "18829705",
+        "genero": "masculino",
+        "fecha_nacimiento": "12/09/1988",
+        "foto_perfil": "18829705.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "18829705"
     },
     {
-        "nombre":"Zulay Pineda",
-        "descripcion":"Soy estudiante de la Licenciatura en Computación de las menciones de Inteligencia Artificial y Bases de Datos, practico los idiomas ingles y frances y en mi tiempo libre me gusta leer.",
+        "nombre": "Jorge Gavidia",
+        "descripcion": "Soy estudiante de la licenciatura de Computación de la UCV. Me especializo en el área de Redes de comunicaciones, servidores y VoIp, trabajo en la empresa Gare Network Developed como analista de redes y sistemas. Combino mi tiempo libre con actividades de deportes extremo como la Escalada, Canyoning, adicionalmente practico el montañismo y excursionismo.",
+        "color_favorito": "Azul",
+        "libro_favorito": [
+            "El Principito"
+        ],
+        "musica_favorita": [
+            "En realidad es variado, no me límito a uno solo"
+        ],
+        "video_juegos": [
+            "Counter Strike"
+        ],
+        "lenguajes_programacion": [
+            "C",
+            "C++",
+            "Java",
+            "Haskell",
+            "Prolog"
+        ],
+        "email": "jorgega99@hotmail.com",
+        "ci": "18836874",
+        "genero": "masculino",
+        "fecha_nacimiento": "24/04/1989",
+        "foto_perfil": "18836874.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "18836874"
+    },
+    {
+        "nombre": "Felix Garcia",
+        "descripcion": "Estudiante de la escuela de computación de la Universidad Central de Venezuela. Preparador del laboratorio de Comunicación de Datos. Gocho de San Cristoche, criado toda mi vida en Caracas, nunca falta un buen avilazo.",
+        "color_favorito": "Azul",
+        "libro_favorito": [
+            "Canción de hielo y Fuego"
+        ],
+        "musica_favorita": [
+            "Rock y Pop (80's)"
+        ],
+        "video_juegos": [
+            "Rocket League",
+            "Dota2",
+            "Counter Strike Global Offensive"
+        ],
+        "lenguajes_programacion": [
+            "C",
+            "C++",
+            "Html",
+            "Phyton",
+            "Java",
+            "php"
+        ],
+        "email": "FG.SOS.STORE@gmail.com",
+        "ci": "18938455",
+        "genero": "masculino",
+        "fecha_nacimiento": "26/07/1989",
+        "foto_perfil": "18938455.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "18938455"
+    },
+    {
+        "nombre": "Zulay Pineda",
+        "descripcion": "Soy estudiante de la Licenciatura en Computación de las menciones de Inteligencia Artificial y Bases de Datos, practico los idiomas ingles y frances y en mi tiempo libre me gusta leer.",
         "color_favorito": "morado",
-        "libro_favorito": ["Ogullo y Prejuicio"],
-        "musica_favorita": ["pop-rock"],
-        "videojuego": ["The sims y simcity"],
-        "lenguajes_programacion":["Java", "C++", "Javascript", "PHP"],
-        "email":"zulay.pineda.19@gmail.com",
-        "ci":"19267152",
-        "genero":"femenino",
-        "fecha_nacimiento":"16/01/1990"
-        "foto_perfil":""
+        "libro_favorito": [
+            "Ogullo y Prejuicio"
+        ],
+        "musica_favorita": [
+            "pop-rock"
+        ],
+        "videojuego": [
+            "The sims y simcity"
+        ],
+        "lenguajes_programacion": [
+            "Java",
+            "C++",
+            "Javascript",
+            "PHP"
+        ],
+        "email": "zulay.pineda.19@gmail.com",
+        "ci": "19267152",
+        "genero": "femenino",
+        "fecha_nacimiento": "16/01/1990",
+        "foto_perfil": "19267152.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "19267152"
     },
     {
         "nombre": "Adrian Montes de Oca",
         "descripccion": "Soy bachiller y actualmente estudiante de la escuela de Computación de la UCV. Además, trabajo desde hace unos meses como desarrollador web para una empresa con la cual he logrado adquirir experiencia en el área. Por otro lado, estoy haciendo un curso para dominar el idioma ingles el cual estaré culminando próximamente, y un curso para el desarrollo de aplicaciones en Android.",
         "color_favorito": "Verde Manzana",
-        "libro_favorito": ["El Principito"],
-        "musica_favorita": ["Varios"],
-        "video_juegos": ["Counter Strike", "FIFA"],
-        "lenguajes_programacion": [ "C++","Java","Javascript", "PHP", "HTML","CSS","Bootstrap"],
+        "libro_favorito": [
+            "El Principito"
+        ],
+        "musica_favorita": [
+            "Varios"
+        ],
+        "video_juegos": [
+            "Counter Strike",
+            "FIFA"
+        ],
+        "lenguajes_programacion": [
+            "C++",
+            "Java",
+            "Javascript",
+            "PHP",
+            "HTML",
+            "CSS",
+            "Bootstrap"
+        ],
         "email": "adrian.a.montesdeoca.m@gmail.com",
         "ci": "19334139",
         "genero": "Masculino",
-        "fecha_nacimiento": "11/01/1989
-        "foto_perfil":"""
+        "fecha_nacimiento": "11/01/1989",
+        "foto_perfil": "19334139.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "19334139"
     },
     {
-        "nombre":"Raquel Escalante Salazar",
-        "descripcion":"Soy estudiante de Licenciatura en Computación, interesada en las áreas de Desarrollo Web, Redes e Inteligencia Artificial. Siempre he tenido cierta pasión por el diseño gráfico y como hobby, me gusta practicarlo con manipulación de imágenes, lo cual me ha impulsado a ver el desarrollo en el área visual e interactiva como una profesión viable y que podría disfrutar muchísimo.",
+        "nombre": "Raquel Escalante Salazar",
+        "descripcion": "Soy estudiante de Licenciatura en Computación, interesada en las áreas de Desarrollo Web, Redes e Inteligencia Artificial. Siempre he tenido cierta pasión por el diseño gráfico y como hobby, me gusta practicarlo con manipulación de imágenes, lo cual me ha impulsado a ver el desarrollo en el área visual e interactiva como una profesión viable y que podría disfrutar muchísimo.",
         "color_favorito": "Magenta",
-        "libro_favorito": ["El Conde de Montecristo"],
-        "musica_favorita":["Rock", "Chillstep", "Soundtracks"],
-        "video_juegos":["Halo","Ace Attorney"],
-        "lenguajes_programacion":["Python","JavaScript","C++","R"],
-        "email":"escalante.raquelj@gmail.com",
-        "ci":"19371273",
-        "genero":"femenino",
-        "fecha_nacimiento":"16/08/1990"
-        "foto_perfil":""
+        "libro_favorito": [
+            "El Conde de Montecristo"
+        ],
+        "musica_favorita": [
+            "Rock",
+            "Chillstep",
+            "Soundtracks"
+        ],
+        "video_juegos": [
+            "Halo",
+            "Ace Attorney"
+        ],
+        "lenguajes_programacion": [
+            "Python",
+            "JavaScript",
+            "C++",
+            "R"
+        ],
+        "email": "escalante.raquelj@gmail.com",
+        "ci": "19371273",
+        "genero": "femenino",
+        "fecha_nacimiento": "16/08/1990",
+        "foto_perfil": "19371273",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "19371273"
     },
     {
-        "nombre":"Gabriel Restrepo",
+        "nombre": "Gabriel Restrepo",
         "descripcion": "Soy bachiller técnico medio en electrónica. Actualmente me encuentro en el 8º semestre de la licenciatura en computación en la gloriosa UNIVERSIDAD CENTRAL DE VENEZUELA. Me gusta el desarrollo web y las redes. Quiero aprender cada día más.",
         "color_favorito": "Gris",
-        "libro_favorito": ["Harry Potter"],
-        "musica_favorita": ["Todo menos Vallenato"],
-        "video_juegos":["Fifa"],
-        "lenguajes_programacion":["C", "C++", "Java", "MySql", "Oracle"],
-        "email":"gabo1gara@gmail.com",
-        "ci":"19379860",
-        "genero":"Masculino",
-        "fecha_nacimiento":"25/05/1989"
-        "foto_perfil":""
+        "libro_favorito": [
+            "Harry Potter"
+        ],
+        "musica_favorita": [
+            "Todo menos Vallenato"
+        ],
+        "video_juegos": [
+            "Fifa"
+        ],
+        "lenguajes_programacion": [
+            "C",
+            "C++",
+            "Java",
+            "MySql",
+            "Oracle"
+        ],
+        "email": "gabo1gara@gmail.com",
+        "ci": "19379860",
+        "genero": "Masculino",
+        "fecha_nacimiento": "25/05/1989",
+        "foto_perfil": "19379860.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "19379860"
     },
     {
-        "nombre":"Rama Gopal Villalobos",
-        "descripcion":"Soy estudiante en Computación UCV. Actualmente curso materias en las áreas de Inteligencia Artificial, Redes y Computación Gráfica, relevantes a mi aspiración de desarrollar Videojuegos. Recientemente (2016) he empezado a escribir ensayos y relatos como primera aproximación a la Escritura.",
+        "nombre": "Rama Gopal Villalobos",
+        "descripcion": "Soy estudiante en Computación UCV. Actualmente curso materias en las áreas de Inteligencia Artificial, Redes y Computación Gráfica, relevantes a mi aspiración de desarrollar Videojuegos. Recientemente (2016) he empezado a escribir ensayos y relatos como primera aproximación a la Escritura.",
         "color_favorito": "Naranja",
-        "libro_favorito": ["Mundo Anillo"],
-        "musica_favorita": ["Chiptune"],
-        "video_juegos":["StarCraft", "La-Mulana", "Zelda"],
-        "lenguajes_programacion":["Ensamblador x86", "C", "C++", "java" ,"haskell"],
-        "email":"lokosselgrisis@gmail.com",
+        "libro_favorito": [
+            "Mundo Anillo"
+        ],
+        "musica_favorita": [
+            "Chiptune"
+        ],
+        "video_juegos": [
+            "StarCraft",
+            "La-Mulana",
+            "Zelda"
+        ],
+        "lenguajes_programacion": [
+            "Ensamblador x86",
+            "C",
+            "C++",
+            "java",
+            "haskell"
+        ],
+        "email": "lokosselgrisis@gmail.com",
         "ci": "19395391",
-        "genero":"masculino",
-        "fecha_nacimiento":"15/09/1982"
-        "foto_perfil":""
+        "genero": "masculino",
+        "fecha_nacimiento": "15/09/1982",
+        "foto_perfil": "19395391.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "19395391"
     },
     {
         "nombre": "Katherine Colina",
         "descripcion": "Soy estudiante del 7mo semestre de la Licenciatura en computación de la UCV. Me gusta el area de Bases de Datos y la Mineria de Datos por lo cual me interesa especializarme en ambas areas, aprendiendo cada dia algo nuevo y en este caso HTML. Apasionada por el senderismo,el excursionismo y las acampadas.",
         "color_favorito": "Naranja",
-        "libro_favorito": ["Muerte en el Nilo"],
-        "musica_favorita": ["Rock de los 80"],
-        "video_juegos": ["Need for Speed"],
-        "lenguajes_programacion":["C/C++","SQL","Java"],
-        "ci":"19499302",
-        "genero":"femenino",
-        "fecha_nacimiento":"28/11/1990"
-        "foto_perfil":"",
-        "email":"kathymcolina@gmail.com"
+        "libro_favorito": [
+            "Muerte en el Nilo"
+        ],
+        "musica_favorita": [
+            "Rock de los 80"
+        ],
+        "video_juegos": [
+            "Need for Speed"
+        ],
+        "lenguajes_programacion": [
+            "C/C++",
+            "SQL",
+            "Java"
+        ],
+        "ci": "19499302",
+        "genero": "femenino",
+        "fecha_nacimiento": "28/11/1990",
+        "foto_perfil": "19499302.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "19499302",
+        "email": "kathymcolina@gmail.com"
     },
     {
-        "nombre":"Jhonny Morales",
-        "descripcion":"Soy estudiante de Licenciatura en Computación en la UCV, mis áreas de interés en la carrera son Bases de Datos y Aplicaciones con la Tecnología Internet. Al mismo tiempo estoy estudiando Contabilidad y al culminar está estudiaré Diseño Gráfico.",
+        "nombre": "Jhonny Morales",
+        "descripcion": "Soy estudiante de Licenciatura en Computación en la UCV, mis áreas de interés en la carrera son Bases de Datos y Aplicaciones con la Tecnología Internet. Al mismo tiempo estoy estudiando Contabilidad y al culminar está estudiaré Diseño Gráfico.",
         "color_favorito": "Turquesa",
-        "libro_favorito": ["La máquina del tiempo"],
-        "musica_favorita": ["Electrónica"],
-        "video_juegos":["DOOM"],
-        "lenguajes_programacion":["Java","C++","Python"],
-        "email":"jhonw.109@gmail.com",
-        "ci":"19558625",
-        "genero":"masculino",
-        "fecha_nacimiento":"29/09/1991"
-        "foto_perfil":""
+        "libro_favorito": [
+            "La máquina del tiempo"
+        ],
+        "musica_favorita": [
+            "Electrónica"
+        ],
+        "video_juegos": [
+            "DOOM"
+        ],
+        "lenguajes_programacion": [
+            "Java",
+            "C++",
+            "Python"
+        ],
+        "email": "jhonw.109@gmail.com",
+        "ci": "19558625",
+        "genero": "masculino",
+        "fecha_nacimiento": "29/09/1991",
+        "foto_perfil": "19558625.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "19558625"
     },
     {
-        "nombre":"Yesenia del Carmen Gil Casique",
+        "nombre": "Yesenia del Carmen Gil Casique",
         "descripcion": "Soy estudiante de la Facultad de Ciencias,trabaje hasta hace poco, en el area de BPM y BI, y actualmente me dedico a trabajar freelacer en la desarrollo de pagina web y community manager",
-         "color_favorito": "rosado",
-         "libro_favorito" : ["Actualmente leo la biblia"],
-         "musica_favorita" : ["balada"],
-         "video_juegos": ["no tengo"],
-         "lenguajes_programacion":["c++","java","python"],
-         "email":"yesenia@gmail.com",
-         "ci": "9932730",
-         "genero":"femenino", 
-         "fecha_nacimiento":"13/09/1990"
-         "foto_perfil":""
-     },
-     {	
-	"nombre":"Angel Acosta",
-	"descripcion":"Soy estudiante de Licenciatura en Computación en la Universidad Central de Venezuela. Vivo en San Antonio de los Altos. Soy preparador de Matemáticas Discretas I.",
-	"color_favorito": "Azul",
-	"libro_favorito": ["El Nombre del Viento"],
-	"musica_favorita": ["Jazz"],
-	"video_juegos": ["Super Smash Bros."],
-	"lenguajes_programacion": ["Java", "C", "C++", "Python"],
-	"email":"angelxob@hotmail.com",
-	"ci":20117857,
-	"genero":"masculino",
-	"fecha_nacimiento":"28/05/1991"
-    "foto_perfil":""
-    },
-    {	
-	"nombre":"Maria Eugenia Pulido",
-	"descripcion":"Soy estudiante de Licenciatura en Computación en la UCV. Este es mi ultimo semestre de electivas, por lo que espero poder empezar el seminario el año que viene, tengo poca experiencia en Desarrollo Web ya que me he enfocado más en las Bases de Datos.",
-	"color_favorito": "Morado",
-	"libro_favorito": ["Harry Potter y el Principe Mestizo / Lady Johanna de Julie Garwood"],
-	"musica_favorita": ["Pop-Rock Latino"],
-	"video_juegos": ["LEGO Star Wars"],
-	"lenguajes_programacion":["C", "C++", "Python", "SQL", "Java"],
-	"email":"mepulido19@gmail.com",
-	"ci":"20289633",
-	"genero": "femenino",
-	"fecha_nacimiento":"00/00/1900"
-    "foto_perfil":""
-    },
-    {	
-	"nombre":"Cesar Salazar",
-	"descripcion": "Soy Estudiante de computacion en la Universidad Central de Venezuela,aprendiendo sobre el Web design y las Bases de datos; aunque el area de Redes tambien me atrae mucho.",
-	"color_favorito":"Rosado barbie",
-	"libro_favorito":"La culpa es de la Vaca",
-	"musica_favorita":"Vallenato",
-	"video_juegos": ["Among Us"],
-	"lenguajes_programacion":["Python", "C++" , "SQL"],
-	"email":"bitemecesar@gmail.com",
-	"ci":"27223325",
-	"genero": "masculino",
-	"fecha_nacimiento":"16/03/1999"
-	"foto_perfil": "27223325.jpeg"
+        "color_favorito": "rosado",
+        "libro_favorito": [
+            "Actualmente leo la biblia"
+        ],
+        "musica_favorita": [
+            "balada"
+        ],
+        "video_juegos": [
+            "no tengo"
+        ],
+        "lenguajes_programacion": [
+            "c++",
+            "java",
+            "python"
+        ],
+        "email": "yesenia@gmail.com",
+        "ci": "9932730",
+        "genero": "femenino",
+        "fecha_nacimiento": "13/09/1990",
+        "foto_perfil": "9932730.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "9932730"
     },
     {
-    "nombre": "Aaron Morillo",
-    "descripcion": "Soy un estudiante de la escuela de computacion del sexto semestre. Inicie esta carrera en el año 2018 y estoy antusiasmado por aprender sobre este mundo cada vez más. Actualmente estoy en el proceso y con el interes de aprender sobre tecnologias destacadas en la web, especificamente sobre frameworks como Laravel o Angular 10.",
-    "color_favorito":"Verde",
-    "libro_favorito":"The lord of the rings",
-    "musica_favorita":"Progressive House",
-    "video_juegos":["Battlefield 1"],
-    "lenguajes_programacion":["Javascript", " Java", " C", " C++", " PHP", " HTML", " CSS", " Prolog", " Haskell", " UML"],
-    "email":"aaronmorillo7@gmail.com",
-    "ci": "27449007",
-    "genero": "masculino", 
-    "fecha_nacimiento": "16/01/1999",
-    "foto_perfil": "27449007.jpg"
+        "nombre": "Angel Acosta",
+        "descripcion": "Soy estudiante de Licenciatura en Computación en la Universidad Central de Venezuela. Vivo en San Antonio de los Altos. Soy preparador de Matemáticas Discretas I.",
+        "color_favorito": "Azul",
+        "libro_favorito": [
+            "El Nombre del Viento"
+        ],
+        "musica_favorita": [
+            "Jazz"
+        ],
+        "video_juegos": [
+            "Super Smash Bros."
+        ],
+        "lenguajes_programacion": [
+            "Java",
+            "C",
+            "C++",
+            "Python"
+        ],
+        "email": "angelxob@hotmail.com",
+        "ci": "20117857",
+        "genero": "masculino",
+        "fecha_nacimiento": "28/05/1991",
+        "foto_perfil": "20117857.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "20117857"
     },
-    {	
-	"nombre":"Jose Gregorio Hernandez",
-	"descripcion":"Soy estudiante de computacion del 6to semestre de la UCV, bachiller desde el 2015 y actualmente me desempeño como desarrollador frontend con react para una empresa llamada JaliSoft.",
-	"color_favorito":"verde",
-	"libro_favorito":"El Psicoanalista",
-	"musica_favorita":"Cualquiera menos vallenato",
-	"video_juegos": ["Odio League of Legends"],
-	"lenguajes_programacion":["Python","JavaScript","C++","Java"],
-	"email":"joseghi.26@gmail.com",
-	"ci":"27904160",
-	"genero": "masculino",
-	"fecha_nacimiento":"26/08/1998",
-	"foto_perfil": "27904160.jpg"
+    {
+        "nombre": "Maria Eugenia Pulido",
+        "descripcion": "Soy estudiante de Licenciatura en Computación en la UCV. Este es mi ultimo semestre de electivas, por lo que espero poder empezar el seminario el año que viene, tengo poca experiencia en Desarrollo Web ya que me he enfocado más en las Bases de Datos.",
+        "color_favorito": "Morado",
+        "libro_favorito": [
+            "Harry Potter y el Principe Mestizo / Lady Johanna de Julie Garwood"
+        ],
+        "musica_favorita": [
+            "Pop-Rock Latino"
+        ],
+        "video_juegos": [
+            "LEGO Star Wars"
+        ],
+        "lenguajes_programacion": [
+            "C",
+            "C++",
+            "Python",
+            "SQL",
+            "Java"
+        ],
+        "email": "mepulido19@gmail.com",
+        "ci": "20289633",
+        "genero": "femenino",
+        "fecha_nacimiento": "00/00/1900",
+        "foto_perfil": "20289633.jpg",
+        "password": "20289633"
     },
-    {	
-	"nombre":"Daniel Berbesi",
-	"descripcion":"Estudiante de la carrera Ciencias de la computacion, preferencia por el back-end, buscando graduarse de la mencion Inteligencia Artificial. Esperando lograr todo esto en el menor tiempo posible.",
-	"color_favorito":"Negro",
-	"libro_favorito":"ZigZag",
-	"musica_favorita":"Dubstep",
-	"video_juegos": ["LOL", "Valorant", "CSGO", "..."],
-	"lenguajes_programacion":["Assembler", "C", "C++", "Python", "Java", "Prolog", "Haskell", "..."],
-	"email":"berbesidaniel@gmail.com",
-	"ci":"28015794",
-	"genero": "masculino",
-	"fecha_nacimiento":"07/06/1999",
-	"foto_perfil": "28015794.jpg"
+    {
+        "nombre": "Cesar Salazar",
+        "descripcion": "Soy Estudiante de computacion en la Universidad Central de Venezuela,aprendiendo sobre el Web design y las Bases de datos; aunque el area de Redes tambien me atrae mucho.",
+        "color_favorito": "Rosado barbie",
+        "libro_favorito": "La culpa es de la Vaca",
+        "musica_favorita": "Vallenato",
+        "video_juegos": [
+            "Among Us"
+        ],
+        "lenguajes_programacion": [
+            "Python",
+            "C++",
+            "SQL"
+        ],
+        "email": "bitemecesar@gmail.com",
+        "ci": "27223325",
+        "genero": "masculino",
+        "fecha_nacimiento": "16/03/1999",
+        "foto_perfil": "27223325.jpeg",
+        "password": "27223325"
     },
-    {	
-	"nombre": "Jhonatan Llerena Vidales",
-    "descripcion": "Soy estudiante de sexto semestre en Lic. en Computación de la Universidad Central de Venezuela. Me desempeño en el área de desarrollo web, me gusta aprender de las nuevas tecnologías que me ayudan a mejorar mis destrezas y conocimiento como desarrollador.",
-    "color_favorito": "Azul",
-    "libro_favorito": ["No es cuestión de leche. Es cuestión de actitud"],
-    "musica_favorita": ["De todo un poco"],
-    "video_juegos": ["Fifa"],
-    "lenguajes_programacion": ["C", "C++", "Java", "PHP"],
-    "email": "jonlleucv@gmail.com",
-    "ci": "82298598",
-    "genero": "Masculino",
-    "fecha_nacimiento": "19/07/1992",
-    "foto_perfil": "82298598.jpg"
+    {
+        "nombre": "Aaron Morillo",
+        "descripcion": "Soy un estudiante de la escuela de computacion del sexto semestre. Inicie esta carrera en el año 2018 y estoy antusiasmado por aprender sobre este mundo cada vez más. Actualmente estoy en el proceso y con el interes de aprender sobre tecnologias destacadas en la web, especificamente sobre frameworks como Laravel o Angular 10.",
+        "color_favorito": "Verde",
+        "libro_favorito": "The lord of the rings",
+        "musica_favorita": "Progressive House",
+        "video_juegos": [
+            "Battlefield 1"
+        ],
+        "lenguajes_programacion": [
+            "Javascript",
+            " Java",
+            " C",
+            " C++",
+            " PHP",
+            " HTML",
+            " CSS",
+            " Prolog",
+            " Haskell",
+            " UML"
+        ],
+        "email": "aaronmorillo7@gmail.com",
+        "ci": "27449007",
+        "genero": "masculino",
+        "fecha_nacimiento": "16/01/1999",
+        "foto_perfil": "27449007.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "27449007"
+    },
+    {
+        "nombre": "Jose Gregorio Hernandez",
+        "descripcion": "Soy estudiante de computacion del 6to semestre de la UCV, bachiller desde el 2015 y actualmente me desempeño como desarrollador frontend con react para una empresa llamada JaliSoft.",
+        "color_favorito": "verde",
+        "libro_favorito": "El Psicoanalista",
+        "musica_favorita": "Cualquiera menos vallenato",
+        "video_juegos": [
+            "Odio League of Legends"
+        ],
+        "lenguajes_programacion": [
+            "Python",
+            "JavaScript",
+            "C++",
+            "Java"
+        ],
+        "email": "joseghi.26@gmail.com",
+        "ci": "27904160",
+        "genero": "masculino",
+        "fecha_nacimiento": "26/08/1998",
+        "foto_perfil": "27904160.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "27904160"
+    },
+    {
+        "nombre": "Daniel Berbesi",
+        "descripcion": "Estudiante de la carrera Ciencias de la computacion, preferencia por el back-end, buscando graduarse de la mencion Inteligencia Artificial. Esperando lograr todo esto en el menor tiempo posible.",
+        "color_favorito": "Negro",
+        "libro_favorito": "ZigZag",
+        "musica_favorita": "Dubstep",
+        "video_juegos": [
+            "LOL",
+            "Valorant",
+            "CSGO",
+            "..."
+        ],
+        "lenguajes_programacion": [
+            "Assembler",
+            "C",
+            "C++",
+            "Python",
+            "Java",
+            "Prolog",
+            "Haskell",
+            "..."
+        ],
+        "email": "berbesidaniel@gmail.com",
+        "ci": "28015794",
+        "genero": "masculino",
+        "fecha_nacimiento": "07/06/1999",
+        "foto_perfil": "28015794.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "28015794"
+    },
+    {
+        "nombre": "Jhonatan Llerena Vidales",
+        "descripcion": "Soy estudiante de sexto semestre en Lic. en Computación de la Universidad Central de Venezuela. Me desempeño en el área de desarrollo web, me gusta aprender de las nuevas tecnologías que me ayudan a mejorar mis destrezas y conocimiento como desarrollador.",
+        "color_favorito": "Azul",
+        "libro_favorito": [
+            "No es cuestión de leche. Es cuestión de actitud"
+        ],
+        "musica_favorita": [
+            "De todo un poco"
+        ],
+        "video_juegos": [
+            "Fifa"
+        ],
+        "lenguajes_programacion": [
+            "C",
+            "C++",
+            "Java",
+            "PHP"
+        ],
+        "email": "jonlleucv@gmail.com",
+        "ci": "82298598",
+        "genero": "Masculino",
+        "fecha_nacimiento": "19/07/1992",
+        "foto_perfil": "82298598.jpg",
+        "enlinea": false,
+        "facebook": "",
+        "twitter": "",
+        "tipo": "estudiante",
+        "password": "82298598"
     }
 ]
-use miapp_ati
-db.createCollection('usuarios')
-db.createCollection('amigo')
-db.createCollection('publicacion')
-db.createCollection('media')
-db.createCollection('comentario')
-db.createCollection('chat')
-db.createCollection('mensaje')
-db.createCollection('configuracion')
-db.createCollection('lenguaje')
-db.createCollection('perfil')
-db.createCollection('notificacion')
-db.usuarios.insert(listado)

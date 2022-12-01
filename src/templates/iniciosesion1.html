@@ -1,23 +1,27 @@
-{% extends "base.html" %} {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/iniciosesion1.css')}}" type="text/css" />
-<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}" type="text/css" />
-{% endblock %} {% block content %}
-    <title>ATI [UCV] 2022-1</title>
-  </head>
-  <body>
+{% extends "base_template.html" %} 
+{% block title %}Inicio de sesion por 1era vez{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for("static", filename='css/iniciosesion1.css')}}">
+{% endblock %} 
+{% block content %}
     <header>
         <p class="tit"> ATI[UCV]2022-01</p>
     </header>
     <div class = "container">
         <h2 class = "tit1">Iniciar sesión</h2>
         
-        <h4 class="tit2">Para iniciar sesióoooon por primera vez coloque como contraseña su número de cédula.</h4>
-        <label id = "lblContra">Contraseña</label>
-        <input type = "text" id = "contraInput" placeholder = "Ingresa tu contraseña">
+        <h4 class="tit2">Para iniciar sesión por primera vez coloque como contraseña su número de cédula.</h4>
+        <div>
+            <label id = "lblContra">{{ form.password.label }}</label><br>
+            {{ form.password }}<br>
+            {% for error in form.password.errors %}
+            <span id="errorL" >{{ error }}</span>
+            {% endfor %}
+        </div>
         
         
-        <a class="entrar" href="./cambiarcontraseña.html">
+        <a class="entrar" href="/cambiarcontraseña">
           Iniciar sesión
       </a>
     </div>
-    {% endblock %}
+{% endblock %}

@@ -16,7 +16,7 @@ header{
 
 .tit1{
   font-size: 50px;
-  margin-top: -2%;
+  margin-top: 0%;
 }
 
 
@@ -33,11 +33,10 @@ a {
 
 .tit2{
   font-size: 26px;
-  margin-top: -1%;
+  margin-top: 0%;
 }
 
 #nomeInput{
-  border: 1px solid #d9dadc;
   width: 500px;
   height: 42px;
   box-sizing: border-box;
@@ -123,8 +122,12 @@ a {
   border-radius: 10px;
   font-size: 23px;
   color: white;
-  margin-top: 0%;
+  margin-top: 3%;
   text-align: center;
+}
+
+#errorL{
+    color: red;
 }
 
 

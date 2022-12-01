@@ -1,0 +1,55 @@
+{% extends "base_template.html" %}
+
+{% block title %}Registro de usuarios{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for("static", filename='css/registro.css')}}"/>
+{% endblock %} 
+
+
+{% block content %}   
+  <header>
+    <p class="tit"> ATI[UCV]2022-01</p>
+  </header>
+  <div class = "container">
+    <h2 class = "tit1">Registro</h2>
+    <h3 class="tit2">Llene los siguientes datos</h3>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <div>
+          <label id = "lblEmail">{{ form.email.label }}</label><br>
+          {{ form.email }}<br>
+          {% for error in form.email.errors %}
+          <span id="errorL" >{{ error }}</span>
+          {% endfor %}
+        </div>
+        <div>
+            <label id = "lblName">{{ form.name.label }}</label><br>
+              {{ form.name }} <br>
+              {% for error in form.name.errors %}
+              <span id="errorL">{{ error }}</span>
+              {% endfor %}
+        </div>
+        <div>
+            <label id = "lblApe">{{ form.lastname.label }}</label><br>
+              {{ form.lastname }} <br>
+              {% for error in form.lastname.errors %}
+              <span id="errorL">{{ error }}</span>
+              {% endfor %}
+        </div>
+        <div>
+            <label id = "lblCedula">{{ form.ci.label }}</label><br>
+              {{ form.ci }}<br>
+              {% for error in form.ci.errors %}
+              <span id="errorL">{{ error }}</span>
+              {% endfor %}
+        </div>
+        <div class="crear">
+            {{ form.submit() }}
+        </div>
+        <div class="iniciosesion" >¿Ya tienes cuenta?<a href="{{ url_for('login') }}">Inicia sesión</a></div>
+        
+    </form>
+    
+  </div>
+{% endblock %}

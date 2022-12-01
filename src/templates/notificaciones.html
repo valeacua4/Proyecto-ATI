@@ -1,11 +1,15 @@
-{% extends "base.html" %} {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/notificaciones.css')}}" type="text/css" />
-<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}" type="text/css" />
-{% endblock %} {% block content %}
+{% extends "base1.html" %} {% block head %}
+<link rel="stylesheet" href="{{ url_for("static", filename='css/notificaciones.css')}}" type="text/css" />
+<link rel="stylesheet" href="{{ url_for("static", filename='css/home.css')}}" type="text/css" />
+{% endblock %} {% block body %}
 <!-------- Titulo de la pagina  ------->
 <div class="title_page">
-  <a href="/home">
-    <img src="../static/images/icons/arrow_left.svg" class="arrow" alt="flecha para volver" />
+  <a href="/">
+    <img
+      src="{{ url_for('static', filename='images/icons/arrow_left.svg')}}"
+      class="arrow"
+      alt="flecha para volver"
+    />
   </a>
   <h1 class="title_text">Notificaciones</h1>
 </div>

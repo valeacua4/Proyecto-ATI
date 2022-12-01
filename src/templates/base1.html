@@ -1,0 +1,110 @@
+{% extends "base_template.html" %}   
+{% block title %}ATI-1-2022{% endblock %}
+{% block content %}   
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-9">
+        {% block body %}
+        {% endblock body %}
+        <!---------- Footer -------------->
+        <div class="footer d-lg-none">
+          <a href="/">
+            <img
+              src="{{ url_for("static", filename='images/icons/home_fill.svg')}}"
+              width="25"
+              height="25"
+              class="icon_footer"
+              alt="icono de home"
+            />
+          </a>
+          <a href="/notificaciones">
+            <img
+              src="{{ url_for("static", filename='images/icons/notification.svg')}}"
+              width="25"
+              height="25"
+              class="icon_footer"
+              alt="icono de notificaciones"
+            />
+          </a>
+          <a href="/publicacion">
+            <img
+              src="{{ url_for("static", filename='images/icons/plus.svg')}}"
+              width="25"
+              height="25"
+              class="icon_footer"
+              alt="icono de crear publicacion"
+            />
+          </a>
+          <a href="/chat">
+            <img
+              src="{{ url_for("static", filename='images/icons/chat.svg')}}"
+              width="25"
+              height="25"
+              class="icon_footer"
+              alt="icono del chat"
+            />
+          </a>
+          <a href="/perfil">
+            <img
+              src="{{ url_for("static", filename='images/png/avatar_man.png')}}"
+              width="25"
+              height="25"
+              class="icon_footer"
+              alt="avatar de mi perfil"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Sidebar en desktop -->
+      <div class="sidebar col-lg-3 d-none d-lg-block">
+        <a href="/" class="item_sidebar">
+          <img
+            src="{{ url_for("static", filename='images/icons/home_white.svg')}}"
+            alt="icono de home"
+          />
+          <p class="title_sidebar">Home</p>
+        </a>
+        <a href="/notificaciones" class="item_sidebar">
+          <img
+            src="{{ url_for("static", filename='images/icons/notifications_white.svg')}}"
+            alt="icono de notificaciones"
+          />
+          <p class="title_sidebar">Notificaciones</p>
+        </a>
+        <a class="item_sidebar" href="/publicacion">
+          <img
+            src="{{ url_for("static", filename='images/icons/plus_white.svg')}}"
+            alt="icono de crear publicacion"
+          />
+          <p class="title_sidebar">Crear publicación</p>
+        </a>
+        <a class="item_sidebar" href="/chat">
+          <img
+            src="{{ url_for("static", filename='images/icons/chat_white.svg')}}"
+            alt="icono del chat"
+          />
+          <p class="title_sidebar">Chat</p>
+        </a>
+        <a href="/perfil" class="item_sidebar">
+          <img
+            width="50"
+            height="50"
+            src="{{ url_for("static", filename='images/svg/eduardo_yanez.svg')}}"
+            alt="icono de mi perfil"
+          />
+          <p class="title_sidebar">Mi Perfil</p>
+        </a>
+        <a href="/login" class="item_sidebar exit">
+          <img
+            src="{{ url_for("static", filename='images/icons/exit_white.svg')}}"
+            alt="icono de cerrar sesion"
+          />
+          <p class="title_sidebar">Cerrar sesión</p>
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
