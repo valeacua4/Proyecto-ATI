@@ -21,23 +21,11 @@ app.config['SECRET'] = "secret!123"
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Establecemos conexión
-<<<<<<< HEAD
-mongodb_client = MongoClient('mongodb://bd:27017/')
-# Seleccionamos nuestra base de datos
-db = mongodb_client['miapp_ati']
-my_coleccion= db["prueba"]
-inserte = {"name": "Prueba", "sueldo": "100"}
-result = my_coleccion.insert_one(inserte)
-# Seleccionamos una colección
-# print(db.list_database_names())
-
-=======
 
 # Seleccionamos nuestra base de datos
 #db = mongodb_client.test_database
 # Seleccionamos una colección
 #my_coleccion= db.Nombre_Coleccion
->>>>>>> origin/cambiosVictor
 
 mongodb_client = MongoClient('mongodb://bd:27017/')
 db = mongodb_client["db_ati"]

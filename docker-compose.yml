@@ -9,11 +9,7 @@ services:
     volumes:
       - ./src:/workdir/src
     links:
-<<<<<<< HEAD
       - bd
-=======
-    - bd
->>>>>>> origin/cambiosVictor
   bd:
     image: mongo:5.0
     restart: always
