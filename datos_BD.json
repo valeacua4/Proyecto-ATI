@@ -39,7 +39,7 @@ var listado = [
 	"ci":"18002106",
 	"genero":"masculino",
 	"fecha_nacimiento":"19/12/1988"
-    "foto_perfil":""
+    "foto_perfil": "18002106.jpg"
     },
     {	
 	"nombre":"Jimmy E. Espino B.",

@@ -1,15 +1,14 @@
-{% extends "base.html" %}
+{% extends "base1.html" %}
 {% block head %}
-<link rel="stylesheet" 
-href="{{ url_for('static', filename='css/home.css')}}"
-type="text/css" />
+  <link rel="stylesheet" href="{{ url_for("static", filename="css/home.css") }}">
+
 {% endblock %}
-{% block content %}
+{% block body %}
   <div class="form-group search">
     <!-- Buscador -->
     <img
       class="search_icon"
-      src="{{ url_for('static', filename='images/icons/search.svg')}}"
+      src="{{ url_for("static", filename='images/icons/search.svg')}}"
       alt="icono de lupa"
     />
     <input
@@ -24,7 +23,7 @@ type="text/css" />
     <div class="head_card">
       <a href="/perfil">
       <img
-        src="{{ url_for('static', filename='images/png/avatar_man.png')}}"
+        src="{{ url_for("static", filename='images/png/avatar_man.png')}}"
         class="avatar"
         alt="foto de perfil del usuario"
       />
@@ -37,7 +36,7 @@ type="text/css" />
     <p class="caption">El nuevo preparador es genial!!</p>
     <!-- imagen -->
     <img
-    src="{{ url_for('static', filename='images/png/card.png')}}"
+    src="{{ url_for("static", filename='images/png/card.png')}}"
       class="cover_card"
       alt="foto de la publicacion"
     />
@@ -49,7 +48,7 @@ type="text/css" />
       <div class="comments_card_icon">
         <img
           class="comment_icon"
-          src="{{ url_for('static', filename='images/icons/chat_fill_black.svg')}}"
+          src="{{ url_for("static", filename='images/icons/chat_fill_black.svg')}}"
           alt="icono de comentarios"
         />
         <p class>57</p>
@@ -62,7 +61,7 @@ type="text/css" />
     <div class="head_card">
       <a href="/perfil2">
       <img
-        src="{{ url_for('static', filename='images/png/avatar_man2.png')}}"
+        src="{{ url_for("static", filename='images/png/avatar_man2.png')}}"
         width="46"
         height="46"
         class="avatar"
@@ -84,7 +83,7 @@ type="text/css" />
     <div class="head_card">
       <a href="/perfil3">
       <img
-        src="{{ url_for('static', filename='images/png/avatar_x.png')}}"
+        src="{{ url_for("static", filename='images/png/avatar_x.png')}}"
         width="46"
         height="46"
         class="avatar"
@@ -107,7 +106,7 @@ type="text/css" />
       <div class="comments_card_icon">
         <img
           class="comment_icon"
-          src="{{ url_for('static', filename='images/icons/chat_fill_black.svg')}}"
+          src="{{ url_for("static", filename='images/icons/chat_fill_black.svg')}}"
           alt="icono de comentarios"
         />
         <p class>57</p>

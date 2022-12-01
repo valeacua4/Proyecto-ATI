@@ -1,46 +1,52 @@
-{% extends "base.html" %} {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css')}}" type="text/css" />
-<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}" type="text/css" />
-{% endblock %} {% block content %}
-    <title>ATI [UCV] 2022-1</title>
-  </head>
-  <body>
+{% extends "base_template.html" %}
+
+{% block title %}Login{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/login.css") }}">
+  
+{% endblock %} 
+
+{% block content %}
     <header>
         <p class="tit"> ATI[UCV]2022-01</p>
     </header>
-   
-    <div class = "container">
-        <h2 class = "tit1">Inicio de sesión</h2>
-        <div class="login">
-            <a class="facebook btn" href="#">
-              <div class="btn-icon fb-icon"></div>
-              Continuar con Facebook
-            </a>
-            <a class="twitter btn" href="#">
-              <div class="twitter-icon btn-icon"></div>
-              Continuar con Twitter
-            </a>
-        </div> 
-        
-        <div class="lineOr"><p>o</p></div>
-        
-        <h3 class="tit2">Inicia sesión con tu cuenta ATI</h3>
-        <label id = "lblEmail">Email/Usuario</label>
-        <input type = "text" id = "nomeInput" placeholder = "hey@tuemail.com">
-            <label id = "lblContra">Contraseña</label>
-        <input type = "text" id = "senhaInput" placeholder = "Ingresa tu contraseña">
-        
-        <a class="olvidoContra" href="./restablecer.html">
-            ¿Has olvidado tu contraseña?
-        </a>
-        
-        <a class="entrar" href="/">
-          Iniciar sesión
-        </a>
-
-        <a class="registro" href="./registro.html">
-            ¿No tienes cuenta? Registrate
-        </a>
-
+    <div class="container">
+        <form action="" method="post" novalidate >
+            <h2 class = "tit1">Inicio de sesión</h2>
+            <div class="login">
+                <a class="facebook btn" href="facebook/">
+                    <div class="btn-icon fb-icon"></div>
+                    Continuar con Facebook
+                  </a>
+                
+                <a class="twitter btn" href="#">
+                  <div class="twitter-icon btn-icon"></div>
+                  Continuar con Twitter
+                </a>
+            </div> 
+            {{ form.hidden_tag() }}
+            <h3 class="tit2">Inicia sesión con tu cuenta ATI</h3>
+            <div >
+                <label id = "lblEmail">{{ form.email.label }}</label><br>
+                {{ form.email }}<br>
+                {% for error in form.email.errors %}
+                <span id="errorL" >{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div>
+                <label id = "lblContra">{{ form.password.label }}</label><br>
+                {{ form.password }}<br>
+                {% for error in form.password.errors %}
+                <span id="errorL" >{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div>{{ form.remember_me() }} {{ form.remember_me.label }}</div>
+            <div class="entrar">
+                {{ form.submit() }}
+            </div>
+            <div class="olvidoContra" ><a href="/restablecer">¿Has olvidado tu contraseña?</a></div> 
+            <div class="registro" >¿No tienes cuenta? <a href="{{ url_for('show_signup_form') }}">Regístrate</a></div>
+        </form>
     </div>
-  {% endblock %}
+    
+{% endblock %}
