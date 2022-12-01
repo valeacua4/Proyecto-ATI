@@ -1,4 +1,4 @@
-/mongo-volume
+\mongo-volume
 
 #pycache
 /_pycache_
@@ -8,5 +8,5 @@ _pycache_
 *.py[cod]
 *$py.class
 pycache/
-/src/__pycache__
+\src\__pycache__
 
