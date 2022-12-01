@@ -21,12 +21,6 @@ app.config['SECRET'] = "secret!123"
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Establecemos conexión
-
-# Seleccionamos nuestra base de datos
-#db = mongodb_client.test_database
-# Seleccionamos una colección
-#my_coleccion= db.Nombre_Coleccion
-
 mongodb_client = MongoClient('mongodb://bd:27017/')
 db = mongodb_client["db_ati"]
 co_usuarios = db["usuarios"]
@@ -45,7 +39,6 @@ with open('datos_BD.json') as j:
     mydata = json.load(j)
     print(mydata)
 
-#inserte = {"name": "Prueba", "sueldo": "100"}
 result = co_usuarios.insert_many(mydata)
 print("result")
 
@@ -238,6 +231,4 @@ def facebook_auth():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')     # open for everyone
-
-    print("epaa")
     
