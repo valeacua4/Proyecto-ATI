@@ -3,7 +3,7 @@ from forms import SignupForm, PostForm, LoginForm
 from flask_login import LoginManager, login_required, login_user, current_user
 from models import users
 from werkzeug.urls import url_parse
-# from pymongo import MongoClient
+from pymongo import MongoClient
 from authlib.integrations.flask_client import OAuth
 from flask_socketio import SocketIO, send
 import os
@@ -11,19 +11,19 @@ import os
 app = Flask(__name__)
 app.config['TESTING'] = False
 app.config['SECRET_KEY'] = '7110c8ae51a4b5af97be6534caef90e4bb9bdcb3380af008f90b23a5d1616bf319bc298105da20fe'
-# app.config["MONGO_URI"] =  "mongodb+srv://valeria:hola1234@ati-proyect2022.vxgpzxs.mongodb.net/?retryWrites=true&w=majority"
+app.config["MONGO_URI"] =  "mongodb+srv://valeria:hola1234@ati-proyect2022.vxgpzxs.mongodb.net/?retryWrites=true&w=majority"
 login_manager = LoginManager(app)
 login_manager.login_view = "user.login"
 oauth = OAuth(app)
 app.config['SECRET'] = "secret!123"
 socketio = SocketIO(app, cors_allowed_origins="*")
 
-## Establecemos conexión
-# mongodb_client = MongoClient('mongodb+srv://valeria:hola1234@ati-proyect2022.vxgpzxs.mongodb.net/?retryWrites=true&w=majority')
-## Seleccionamos nuestra base de datos
-# db = mongodb_client.test_database
-## Seleccionamos una colección
-# my_coleccion= db.Nombre_Coleccion
+# Establecemos conexión
+mongodb_client = MongoClient('mongodb+srv://valeria:hola1234@ati-proyect2022.vxgpzxs.mongodb.net/?retryWrites=true&w=majority')
+# Seleccionamos nuestra base de datos
+db = mongodb_client.test_database
+# Seleccionamos una colección
+my_coleccion= db.Nombre_Coleccion
 
 
 
