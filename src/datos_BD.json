@@ -1,5 +1,5 @@
-var listado = [
-    {
+[
+        {
         "nombre": "Betty Torres",
         "descripcion": "Ingeniero de Sistemas, experiencia en sistemas para recursos humanos, áreas contables, administrativas, industria de telecomunicaciones, de atención al cliente y electorales. Años de desempeño en planificación de proyectos, coordinación de equipos de desarrollo,  seguimiento con metodologías ágiles y puesta en producción de soluciones tecnológicas.",
         "color_favorito": "Naranja y Negro",

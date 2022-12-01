@@ -7,11 +7,13 @@ from pymongo import MongoClient
 from authlib.integrations.flask_client import OAuth
 from flask_socketio import SocketIO, send
 import os
+import json
 
 app = Flask(__name__)
 app.config['TESTING'] = False
 app.config['SECRET_KEY'] = '7110c8ae51a4b5af97be6534caef90e4bb9bdcb3380af008f90b23a5d1616bf319bc298105da20fe'
-app.config["MONGO_URI"] =  "mongodb+srv://valeria:hola1234@ati-proyect2022.vxgpzxs.mongodb.net/?retryWrites=true&w=majority"
+app.config['MONGO_DBNAME'] = 'prueba'
+app.config["MONGO_URI"] = 'mongodb://bd:27017/'
 login_manager = LoginManager(app)
 login_manager.login_view = "user.login"
 oauth = OAuth(app)
@@ -19,6 +21,7 @@ app.config['SECRET'] = "secret!123"
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Establecemos conexión
+<<<<<<< HEAD
 mongodb_client = MongoClient('mongodb://bd:27017/')
 # Seleccionamos nuestra base de datos
 db = mongodb_client['miapp_ati']
@@ -28,8 +31,35 @@ result = my_coleccion.insert_one(inserte)
 # Seleccionamos una colección
 # print(db.list_database_names())
 
+=======
 
+# Seleccionamos nuestra base de datos
+#db = mongodb_client.test_database
+# Seleccionamos una colección
+#my_coleccion= db.Nombre_Coleccion
+>>>>>>> origin/cambiosVictor
 
+mongodb_client = MongoClient('mongodb://bd:27017/')
+db = mongodb_client["db_ati"]
+co_usuarios = db["usuarios"]
+co_amigo = db["amigo"]
+co_publicacion = db["publicacion"]
+co_media = db["media"]
+co_comentario = db["comentario"]
+co_chat = db["chat"]
+co_mensaje = db["mensaje"]
+co_configuracion = db["configuracion"]
+co_lenguaje = db["lenguaje"]
+co_perfil= db["perfil"]
+co_notificacion = db["notificacion"]
+
+with open('datos_BD.json') as j:
+    mydata = json.load(j)
+    print(mydata)
+
+#inserte = {"name": "Prueba", "sueldo": "100"}
+result = co_usuarios.insert_many(mydata)
+print("result")
 
 posts = []
 
