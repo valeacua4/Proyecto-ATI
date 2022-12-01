@@ -8,6 +8,8 @@ services:
       - "5000:5000"
     volumes:
       - ./src:/workdir/src
+    links:
+      - bd
   bd:
     image: mongo:5.0
     restart: always

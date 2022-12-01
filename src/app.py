@@ -19,11 +19,15 @@ app.config['SECRET'] = "secret!123"
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Establecemos conexión
-mongodb_client = MongoClient('mongodb+srv://valeria:hola1234@ati-proyect2022.vxgpzxs.mongodb.net/?retryWrites=true&w=majority')
+mongodb_client = MongoClient('mongodb://bd:27017/')
 # Seleccionamos nuestra base de datos
-db = mongodb_client.test_database
+db = mongodb_client['miapp_ati']
+my_coleccion= db["prueba"]
+inserte = {"name": "Prueba", "sueldo": "100"}
+result = my_coleccion.insert_one(inserte)
 # Seleccionamos una colección
-my_coleccion= db.Nombre_Coleccion
+# print(db.list_database_names())
+
 
 
 
@@ -216,3 +220,6 @@ def facebook_auth():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')     # open for everyone
+
+    print("epaa")
+    

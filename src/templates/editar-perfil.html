@@ -1,7 +1,9 @@
-{% extends "base1.html" %} {% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}" type="text/css" />
-<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}" type="text/css" />
+{% extends "base1.html" %}
+{% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/ver-perfil.css')}}" type="text/css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}" type="text/css" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}" type="text/css" />
+
 {% endblock %} {% block body %}
 <!-------- Titulo de la pagina  ------->
 <div class="title_page">
@@ -91,12 +93,12 @@
     <div>
       <h2 class="h5 fw-bold">Color </h2 class="h5 fw-bold">
         <div>
-          <input type="color" id="color" name="color" value="#006175"> 
+          <input type="color" id="color_app" name="color_app" value="#006175"> 
           <label for="color"> #</label>
         </div>
 
         <div style="text-align: right;">
-          <button style="width: 90px; height: 31px; background: #006175; color: white; border-radius: 20px; border: 1px solid;"> Guardar</button>
+          <button id="guardar_app" style="width: 90px; height: 31px; background: #006175; color: white; border-radius: 20px; border: 1px solid;"> Guardar</button>
         </div>
 
     </div>
@@ -106,4 +108,5 @@
     
   </div>
 </div>
+<!-- <script src="../static/js/color_app.js"></script> -->
 {% endblock %}
