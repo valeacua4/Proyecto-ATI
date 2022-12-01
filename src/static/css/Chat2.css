@@ -9,8 +9,8 @@ body{
 }
 
 /* ----------- MOBILE --------------- */
-@media only screen and (max-width: 428px){
-	aside{
+@media only screen and (max-width: 991px){
+	header{
 		display: none;
 	}
 	.sidebar{
@@ -19,9 +19,21 @@ body{
 	.userc{
 		display: none;
 	}
+	.divisor-desktop{
+		display: none;
+	}
+	.container-fluid{
+		margin: 0px;
+		padding: 0px;
+	}
+	.divisor-movil{
+		margin-top: 10px;
+		height: 2px;
+		background-color: #C9C9C9;
+		align-self: center;
+	}
 	.Lista{
 		padding: 10px;
-
 	}
 	ul{
 		padding-left:0;
@@ -57,42 +69,47 @@ body{
   		background-color: #26FF03;
   		border-radius: 50%;
 	}
-	.divisor-movil{
-		margin-left: 30px;
-		margin-right: 30px;
-		margin-top: 15px;
-		height: 2px;
-		background-color: #C9C9C9;
-		align-self: center;
-	}
 	.chat-usuario{
 		margin-top: 10px;
 		display: flex;
 		justify-content: center;
+		align-content: center;
+		flex-direction: column;
 		background-color: white;
+	}
+	.chat-titulo{
+		padding: 5px;
+		display: inline-flex;
+		justify-content: center;
 	}
 	.chat-pfp{
 		padding: 5px;
 		position: relative;
-		height: 78px;
-		width: 78px;
+		height: 80px;
+		width: 80px;
 		margin-right: 5px;
 	}
 	.chat-name{
-		padding: 25px 10px;
+		padding: 10px;
 		box-sizing:border-box;
 		text-align: center;
 	}
 	.fa{
-		padding: 30px 5px;
+		padding: 5px;
+	}
+	.divisor-chat{
+		margin-top: 5px;
+		height: 2px;
+		background-color: #C9C9C9;
 	}
 	.chat-window{
-		margin-top: 10px;
-		margin-bottom: 10px;
 		height: 100%;
+		height: 48vh;
+		border-color: #006175;
+		border-radius: 15px;
 	}
-	#send-box{
-		display: flex;
+	.send-box{
+		display: inline-flex;
 		position: fixed;
 		bottom: 73px;
 		width: 95vw;
@@ -106,33 +123,19 @@ body{
 		padding: 5px 10px;
 	}
 	.enviar{
-		display: flex;
 		position: relative;
 		background-color: #006175;
 		flex-grow: 1;
-		justify-content: center;
 		border-radius: 15px;
 	}
-	.enviar:hover{
-		height: 120px;
-
-	}
-
-
-
-
-
-
-	.footer {
-	  display: flex;
-	  position: fixed;
-	  width: 100%;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  justify-content: space-around;
-	  padding: 20px 0 20px 0;
-	  background-color: white;
+	p{
+		display: flex;
+		background-color: #006175;
+		border-radius: 15px;
+		color: white;
+		margin: 5px;
+		padding: 5px;
+		text-align: left;
 	}
 }
 
@@ -140,16 +143,17 @@ body{
 
 /* ----------- DESKTOP --------------- */
 @media only screen and (min-width: 429px){
-	aside{
+	header{
+		display: flex;
+		justify-content: space-evenly;
 		padding: 25px;
 		width: 75%;
 		position: relative;
 	}
-	header{
-		display: flex;
-		justify-content: space-evenly;
-	}
 	.footer{
+		display: none;
+	}
+	.divisor-movil{
 		display: none;
 	}
 	.retorno {
@@ -172,7 +176,7 @@ body{
 
 	.Lista{
 		display: flex;
-		padding-left:0;
+		padding:0;
 		margin:0;
 	}
 	ul{
@@ -183,10 +187,15 @@ body{
 	}
 	li{
 		display: flex;
-		padding: 10px 2px;
+		padding: 8px 2px;
 	}
 	h2{
-		font-size: small;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.user{
+		display: flex;
+		flex-direction: column;
 	}
 	.Perfil{
 		position: relative;
@@ -203,80 +212,94 @@ body{
 		margin-left: 5px;
 	}
 	.userc{
-		display:inline-flex;
+		display:flex;
 		vertical-align:top;
 		padding: 10px 5px;
 		flex-grow: 2;
 		box-sizing:border-box;
 	}
-
-
-
-
-	#send-box{
+	.dot{
+		position: absolute;
+		left: 55px;
+  		bottom: 2px;
+  		height: 15px;
+  		width: 15px;
+  		background-color: #26FF03;
+  		border-radius: 50%;
+	}
+	.divisor-desktop{
+		margin-top: 10px;
+		height: 2px;
+		background-color: #C9C9C9;
+	}
+	.chat-usuario{
+		border-color: #006175;
+	}
+	.chat-titulo{
 		display: flex;
-		position: fixed;
 		justify-content: center;
+	}
+	.chat-pfp{
+		border-radius: 55%;
+		overflow: hidden;
+		height: 90px;
+		width: 90px;
+		background-color: white;
+	}
+	.chat-name{
+		text-align: center;
+		padding: 25px 5px;
+		box-sizing:border-box;
+		font-size: medium;
+	}
+	.chat-window{
+		height: 500px;
+		border-color: #006175;
+		border-radius: 15px;
+		text-align: right;
+	}
+	.divisor-chat{
+		margin-top: 10px;
+		margin-right: 5px;
+		height: 2px;
+		background-color: #C9C9C9;
+	}
+	.send-box{
+		display: flex;
 		bottom: 20px;
-		width: 40vh;
-		justify-content: center;
-		margin-left: 25%;
-		margin-right: 25%;
+		height: 65px;
 		justify-content: space-between;
 	}
 	#texto{
 		border-color: #006175;
 		margin-right: 10px;
-		flex-grow: 2;
+		flex-grow: 3;
 		border-radius: 20px;
 		padding: 5px 10px;
 	}
 	.enviar{
 		display: flex;
-		position: relative;
 		background-color: #006175;
-		flex-grow: 1;
+		flex-grow: 2;
 		justify-content: center;
+		align-items: center;
 		border-radius: 15px;
 	}
-	.enviar:hover{
-		height: 120px;
-
+	#icon-send{
+		--fa-pull-margin: 5px;
+		font-size: 45px;
 	}
-	/* ----------- Sidebar --------------- */
 	.sidebar {
-	  background-color: #006175;
-	  height: 100vh;
-	  width: 30%;
-	  position: fixed;
-	  right: 0;
-	  top: 0;
-	  display: flex;
-	  justify-content: space-between;
-	  padding: 0;
-	  padding-top: 35px;
+		position: fixed;
+		top: 0;
 	}
-
-	.item_sidebar {
-	  display: flex;
-	  color: white;
-	  gap: 30px;
-	  margin: 45px 50px 45px 50px;
-	  align-items: center;
-	  cursor: pointer;
-	  text-decoration: none;
-	}
-
-	.item_sidebar:hover {
-	  /* background-color: rgb(196, 196, 196, 0.2); */
-	  font-weight: bold;
-	  text-decoration: none;
-	  color: white;
-	}
-
-	.exit {
-	  position: fixed;
-	  bottom: 0px;
-	  width: 100%;
+	p{
+		display: flex;
+		background-color: #006175;
+		border-radius: 15px;
+		color: white;
+		margin: 5px;
+		padding: 5px;
+		text-align: left;
 	}
 }
